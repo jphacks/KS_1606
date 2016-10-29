@@ -16,3 +16,20 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, "Arial", "游ゴ
+シック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
+"メイリオ", Meiryo, sans-serif;
+  font-size: 16px;
+  line-height: 1.42857;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, "Arial", "ヒラ
+ギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo,
+sans-serif;
+  font-weight: 300;
+  line-height: 1.2;
+}
