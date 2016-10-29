@@ -14,6 +14,9 @@
 		2CE1D71F1DC42C4100E12527 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CE1D71D1DC42C4100E12527 /* LaunchScreen.storyboard */; };
 		2CE1D72A1DC42C4200E12527 /* SkippoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1D7291DC42C4200E12527 /* SkippoTests.swift */; };
 		2CE1D7351DC42C4200E12527 /* SkippoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1D7341DC42C4200E12527 /* SkippoUITests.swift */; };
+		2CF67B301DC4373100DE4D7A /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF67B2F1DC4373100DE4D7A /* TopViewController.swift */; };
+		2CF67B321DC43A1700DE4D7A /* NearByViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF67B311DC43A1700DE4D7A /* NearByViewController.swift */; };
+		2CF67B3A1DC444BC00DE4D7A /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF67B391DC444BC00DE4D7A /* CAPSPageMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,10 @@
 		2CE1D7301DC42C4200E12527 /* SkippoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkippoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CE1D7341DC42C4200E12527 /* SkippoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkippoUITests.swift; sourceTree = "<group>"; };
 		2CE1D7361DC42C4200E12527 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CF67B2C1DC4344C00DE4D7A /* Skippo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Skippo-Bridging-Header.h"; sourceTree = "<group>"; };
+		2CF67B2F1DC4373100DE4D7A /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		2CF67B311DC43A1700DE4D7A /* NearByViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearByViewController.swift; sourceTree = "<group>"; };
+		2CF67B391DC444BC00DE4D7A /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +88,7 @@
 				2CE1D7281DC42C4200E12527 /* SkippoTests */,
 				2CE1D7331DC42C4200E12527 /* SkippoUITests */,
 				2CE1D7121DC42C4100E12527 /* Products */,
+				2CF67B2C1DC4344C00DE4D7A /* Skippo-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +108,9 @@
 				2CE1D7141DC42C4100E12527 /* AppDelegate.swift */,
 				2CE1D7161DC42C4100E12527 /* ViewController.swift */,
 				2CE1D7181DC42C4100E12527 /* Main.storyboard */,
+				2CF67B391DC444BC00DE4D7A /* CAPSPageMenu.swift */,
+				2CF67B311DC43A1700DE4D7A /* NearByViewController.swift */,
+				2CF67B2F1DC4373100DE4D7A /* TopViewController.swift */,
 				2CE1D71B1DC42C4100E12527 /* Assets.xcassets */,
 				2CE1D71D1DC42C4100E12527 /* LaunchScreen.storyboard */,
 				2CE1D7201DC42C4100E12527 /* Info.plist */,
@@ -192,6 +203,7 @@
 				TargetAttributes = {
 					2CE1D7101DC42C4100E12527 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					2CE1D7241DC42C4200E12527 = {
@@ -258,6 +270,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CF67B301DC4373100DE4D7A /* TopViewController.swift in Sources */,
+				2CF67B321DC43A1700DE4D7A /* NearByViewController.swift in Sources */,
+				2CF67B3A1DC444BC00DE4D7A /* CAPSPageMenu.swift in Sources */,
 				2CE1D7171DC42C4100E12527 /* ViewController.swift in Sources */,
 				2CE1D7151DC42C4100E12527 /* AppDelegate.swift in Sources */,
 			);
@@ -409,10 +424,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Skippo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.planningdev.Skippo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Skippo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -421,10 +439,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Skippo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.planningdev.Skippo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Skippo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -502,6 +522,7 @@
 				2CE1D73B1DC42C4200E12527 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CE1D73C1DC42C4200E12527 /* Build configuration list for PBXNativeTarget "SkippoTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +531,7 @@
 				2CE1D73E1DC42C4200E12527 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CE1D73F1DC42C4200E12527 /* Build configuration list for PBXNativeTarget "SkippoUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +540,7 @@
 				2CE1D7411DC42C4200E12527 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

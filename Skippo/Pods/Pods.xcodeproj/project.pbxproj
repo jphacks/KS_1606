@@ -1,0 +1,1177 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		162C4DEF7E955E19A1B31C3969A71F44 = {
+			isa = PBXBuildFile;
+			fileRef = 45760C851276158D51B95DBDAF4D7E37;
+		};
+		19B00B2A0FB18D86BD4DF7E53DFA938A = {
+			isa = PBXBuildFile;
+			fileRef = FA9A62EC13F4C5D21ED392A106FE5DD2;
+		};
+		281105B0FD1288C361E359A168CE4B80 = {
+			isa = PBXBuildFile;
+			fileRef = 57FEE469C65F5041DD9AB012F343C545;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		2913F8E4E40D5CE2C1C2DE026A8A5BB6 = {
+			isa = PBXBuildFile;
+			fileRef = E0FCD5AA39C7EC9868ACAD7DDC4B8BE7;
+		};
+		36826E0A8EDF228D986EFDC4139E62EB = {
+			isa = PBXBuildFile;
+			fileRef = CEC22C73C1608DFA5D5D78BDCB218219;
+		};
+		3BD21501F6282969533D070C03494668 = {
+			isa = PBXBuildFile;
+			fileRef = CEC22C73C1608DFA5D5D78BDCB218219;
+		};
+		442F6F3E5354CA3A3196D3DE8D55BCBE = {
+			isa = PBXBuildFile;
+			fileRef = 3E9F9D745EDB3F8996345E983F02BE0E;
+		};
+		5955ED02C11EAA7CC4F682EC6C325C3E = {
+			isa = PBXBuildFile;
+			fileRef = 02051A521BC7D90E72E92B6815551DDA;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		6A45D8FFF0516B315A633432AB7601F7 = {
+			isa = PBXBuildFile;
+			fileRef = DB22DE0B2521FB211E1D89B2500DE8F5;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+		92F6ED4A0B96F632AD2A4AF9ACC6897E = {
+			isa = PBXBuildFile;
+			fileRef = CEC22C73C1608DFA5D5D78BDCB218219;
+		};
+		9509BB31B65C50CDC0AFFAE2F98EA963 = {
+			isa = PBXBuildFile;
+			fileRef = CEC22C73C1608DFA5D5D78BDCB218219;
+		};
+		C3703099D777463B05E005B443507264 = {
+			isa = PBXBuildFile;
+			fileRef = 6A2EDCE8853CAEF565F7ACC9C7122AFC;
+		};
+		F350A9AFAADDD29EE383CBBADDEDD7B8 = {
+			isa = PBXBuildFile;
+			fileRef = 69D8B0EB16717F56BC8E0A22BEE306BE;
+			settings = {
+				ATTRIBUTES = (
+					Public,
+				);
+			};
+		};
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A4F2867A754C9B4B2D8A60BDDD967AD7 = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E;
+			proxyType = 1;
+			remoteGlobalIDString = 21C461B0CAD90DE64B07A5D212C5F829;
+			remoteInfo = PageMenu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02051A521BC7D90E72E92B6815551DDA = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = sourcecode.c.h;
+			path = "Pods-Skippo-umbrella.h";
+			sourceTree = "<group>";
+		};
+		032B6BC465BCC0FC8B21EE352F80E29C = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			path = "Pods-SkippoTests.modulemap";
+			sourceTree = "<group>";
+		};
+		0DA9D0FB99CF9FEC0167AE1A9E1D39E3 = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = text.plist.xml;
+			path = Info.plist;
+			sourceTree = "<group>";
+		};
+		0F6EC006ABF3FCCDAD2D60244C94B8E6 = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = sourcecode.c.h;
+			path = "PageMenu-prefix.pch";
+			sourceTree = "<group>";
+		};
+		1E3FCEA8503D304C3283AAC647E6C73B = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = text;
+			path = "Pods-SkippoUITests-acknowledgements.markdown";
+			sourceTree = "<group>";
+		};
+		2D790A78A865B3CEC07D0B257B85B4F5 = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			path = "Pods-Skippo.modulemap";
+			sourceTree = "<group>";
+		};
+		34B68575BE5A6B59FDADA4FF451EE474 = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			path = PageMenu.modulemap;
+			sourceTree = "<group>";
+		};
+		395D0DCB6A453733002DF323DD358783 = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = text.script.sh;
+			path = "Pods-SkippoTests-frameworks.sh";
+			sourceTree = "<group>";
+		};
+		3D0F4325226FF8F079AACBF1CCD65BAA = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = text.plist.xml;
+			path = Info.plist;
+			sourceTree = "<group>";
+		};
+		3E9F9D745EDB3F8996345E983F02BE0E = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = sourcecode.c.objc;
+			path = "Pods-SkippoUITests-dummy.m";
+			sourceTree = "<group>";
+		};
+		3FA62884B31A275A642FCFE541D110F7 = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = text.plist.xml;
+			path = "Pods-SkippoTests-acknowledgements.plist";
+			sourceTree = "<group>";
+		};
+		44C0072B59C36F1ED9261E43017DFF95 = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = text.plist.xml;
+			path = "Pods-Skippo-acknowledgements.plist";
+			sourceTree = "<group>";
+		};
+		45760C851276158D51B95DBDAF4D7E37 = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = sourcecode.c.objc;
+			path = "PageMenu-dummy.m";
+			sourceTree = "<group>";
+		};
+		53A1ABA66D0589FFCB7E51A92F65B38B = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = text.xcconfig;
+			path = "Pods-SkippoTests.release.xcconfig";
+			sourceTree = "<group>";
+		};
+		57FEE469C65F5041DD9AB012F343C545 = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = sourcecode.c.h;
+			path = "Pods-SkippoUITests-umbrella.h";
+			sourceTree = "<group>";
+		};
+		586A11F694EEBA234A93BE650A4A9EFA = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = text.script.sh;
+			path = "Pods-Skippo-frameworks.sh";
+			sourceTree = "<group>";
+		};
+		5D514E0A10121B0C95357A32108EDCD2 = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = text.xcconfig;
+			path = "Pods-SkippoTests.debug.xcconfig";
+			sourceTree = "<group>";
+		};
+		621B04F02033B33EB4DE0F1EBCA9EB8A = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = text.xcconfig;
+			path = "Pods-Skippo.debug.xcconfig";
+			sourceTree = "<group>";
+		};
+		69D8B0EB16717F56BC8E0A22BEE306BE = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = sourcecode.c.h;
+			path = "Pods-SkippoTests-umbrella.h";
+			sourceTree = "<group>";
+		};
+		6A2EDCE8853CAEF565F7ACC9C7122AFC = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = sourcecode.c.objc;
+			path = "Pods-Skippo-dummy.m";
+			sourceTree = "<group>";
+		};
+		74432D81713C58334CACC4E41896E4D5 = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = text.script.sh;
+			path = "Pods-SkippoUITests-frameworks.sh";
+			sourceTree = "<group>";
+		};
+		74DD3FF25439369B8831707D5F639186 = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = text;
+			path = "Pods-SkippoTests-acknowledgements.markdown";
+			sourceTree = "<group>";
+		};
+		7B3E70EAAF6FEBCD5E58BC0CAD86C7BA = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.framework;
+			includeInIndex = 0;
+			name = PageMenu.framework;
+			path = PageMenu.framework;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7E61293ED49D861BCE4EDC749284D9DD = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.framework;
+			includeInIndex = 0;
+			name = Pods_SkippoUITests.framework;
+			path = "Pods-SkippoUITests.framework";
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		82EC345FEB04C83FEF693DBC41E045B2 = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.framework;
+			includeInIndex = 0;
+			name = Pods_SkippoTests.framework;
+			path = "Pods-SkippoTests.framework";
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8E6D4CE77417656679C259840A89C195 = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = text.xcconfig;
+			path = "Pods-SkippoUITests.release.xcconfig";
+			sourceTree = "<group>";
+		};
+		90FE997AC6B1AD1BC6CDF14BB0EFD712 = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = text.script.sh;
+			path = "Pods-Skippo-resources.sh";
+			sourceTree = "<group>";
+		};
+		912BD6DCD118B1E72E5B068B91455337 = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.framework;
+			includeInIndex = 0;
+			name = Pods_Skippo.framework;
+			path = "Pods-Skippo.framework";
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 = {
+			isa = PBXFileReference;
+			explicitFileType = text.script.ruby;
+			includeInIndex = 1;
+			lastKnownFileType = text;
+			name = Podfile;
+			path = ../Podfile;
+			sourceTree = SOURCE_ROOT;
+			xcLanguageSpecificationIdentifier = xcode.lang.ruby;
+		};
+		A1FA0B1EEB29AE7C8D378E6E582211B4 = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = text.plist.xml;
+			path = Info.plist;
+			sourceTree = "<group>";
+		};
+		A7DB7F6A6109DF7106CD5CB7B7383087 = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = text.xcconfig;
+			path = "Pods-Skippo.release.xcconfig";
+			sourceTree = "<group>";
+		};
+		ABF6029AC99DB92188D48C250AE94F6E = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = text.plist.xml;
+			path = Info.plist;
+			sourceTree = "<group>";
+		};
+		C1C7EF4CF775DB5796E1C17D426F0FED = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			path = "Pods-SkippoUITests.modulemap";
+			sourceTree = "<group>";
+		};
+		C4122D752CF182181ADAFB79C2CF16FE = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = text.plist.xml;
+			path = "Pods-SkippoUITests-acknowledgements.plist";
+			sourceTree = "<group>";
+		};
+		CEC22C73C1608DFA5D5D78BDCB218219 = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = Foundation.framework;
+			path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework;
+			sourceTree = DEVELOPER_DIR;
+		};
+		CF5D302DE094C0C61C4DD06D519C54E4 = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = text.xcconfig;
+			path = PageMenu.xcconfig;
+			sourceTree = "<group>";
+		};
+		DB22DE0B2521FB211E1D89B2500DE8F5 = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = sourcecode.c.h;
+			path = "PageMenu-umbrella.h";
+			sourceTree = "<group>";
+		};
+		E0FCD5AA39C7EC9868ACAD7DDC4B8BE7 = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = sourcecode.c.objc;
+			path = "Pods-SkippoTests-dummy.m";
+			sourceTree = "<group>";
+		};
+		E2E62FB0C9CEAD514CC8886FDD900165 = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = text.xcconfig;
+			path = "Pods-SkippoUITests.debug.xcconfig";
+			sourceTree = "<group>";
+		};
+		F7022A552881345248DCDE271E277D2D = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = text.script.sh;
+			path = "Pods-SkippoUITests-resources.sh";
+			sourceTree = "<group>";
+		};
+		FA9A62EC13F4C5D21ED392A106FE5DD2 = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = sourcecode.swift;
+			name = CAPSPageMenu.swift;
+			path = Classes/CAPSPageMenu.swift;
+			sourceTree = "<group>";
+		};
+		FBCA5795E2AC515701F2F31D1C14B3DC = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = text;
+			path = "Pods-Skippo-acknowledgements.markdown";
+			sourceTree = "<group>";
+		};
+		FD02E7BC5FBA6907CFFA871EB12E8562 = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = text.script.sh;
+			path = "Pods-SkippoTests-resources.sh";
+			sourceTree = "<group>";
+		};
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B525BD723F79F5D36AA62E98AE2296F = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9509BB31B65C50CDC0AFFAE2F98EA963,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5FBE46555305C54A71B3C929671293 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92F6ED4A0B96F632AD2A4AF9ACC6897E,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E515F623FC01F77FC91F9BD70A99352A = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36826E0A8EDF228D986EFDC4139E62EB,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F21A661CF1E826552A29E430859C3CC2 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BD21501F6282969533D070C03494668,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C254E78091606087E4D40B19059183D = {
+			isa = PBXGroup;
+			children = (
+				DFF8BF11214807003B6DD7AD62F49BE2,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		47E6CF096CA0C13ACF49E354B8A95250 = {
+			isa = PBXGroup;
+			children = (
+				7B3E70EAAF6FEBCD5E58BC0CAD86C7BA,
+				912BD6DCD118B1E72E5B068B91455337,
+				82EC345FEB04C83FEF693DBC41E045B2,
+				7E61293ED49D861BCE4EDC749284D9DD,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4AAA4E4A5E4E6A6B3AEFDE0CE213B434 = {
+			isa = PBXGroup;
+			children = (
+				ABF6029AC99DB92188D48C250AE94F6E,
+				2D790A78A865B3CEC07D0B257B85B4F5,
+				FBCA5795E2AC515701F2F31D1C14B3DC,
+				44C0072B59C36F1ED9261E43017DFF95,
+				6A2EDCE8853CAEF565F7ACC9C7122AFC,
+				586A11F694EEBA234A93BE650A4A9EFA,
+				90FE997AC6B1AD1BC6CDF14BB0EFD712,
+				02051A521BC7D90E72E92B6815551DDA,
+				621B04F02033B33EB4DE0F1EBCA9EB8A,
+				A7DB7F6A6109DF7106CD5CB7B7383087,
+			);
+			name = "Pods-Skippo";
+			path = "Target Support Files/Pods-Skippo";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC,
+				0C254E78091606087E4D40B19059183D,
+				47E6CF096CA0C13ACF49E354B8A95250,
+				AC71B1E9CC2338429C0D5F295537E3C1,
+			);
+			sourceTree = "<group>";
+		};
+		AC71B1E9CC2338429C0D5F295537E3C1 = {
+			isa = PBXGroup;
+			children = (
+				4AAA4E4A5E4E6A6B3AEFDE0CE213B434,
+				DED7D4C5702E545BA0BEE9FC1DFF5322,
+				FC8883131D774F78ED7A34AFB88F4D94,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DED7D4C5702E545BA0BEE9FC1DFF5322 = {
+			isa = PBXGroup;
+			children = (
+				A1FA0B1EEB29AE7C8D378E6E582211B4,
+				032B6BC465BCC0FC8B21EE352F80E29C,
+				74DD3FF25439369B8831707D5F639186,
+				3FA62884B31A275A642FCFE541D110F7,
+				E0FCD5AA39C7EC9868ACAD7DDC4B8BE7,
+				395D0DCB6A453733002DF323DD358783,
+				FD02E7BC5FBA6907CFFA871EB12E8562,
+				69D8B0EB16717F56BC8E0A22BEE306BE,
+				5D514E0A10121B0C95357A32108EDCD2,
+				53A1ABA66D0589FFCB7E51A92F65B38B,
+			);
+			name = "Pods-SkippoTests";
+			path = "Target Support Files/Pods-SkippoTests";
+			sourceTree = "<group>";
+		};
+		DFF8BF11214807003B6DD7AD62F49BE2 = {
+			isa = PBXGroup;
+			children = (
+				FA9A62EC13F4C5D21ED392A106FE5DD2,
+				E5E1640658CDBC34CC84427DD32F03F1,
+			);
+			name = PageMenu;
+			path = PageMenu;
+			sourceTree = "<group>";
+		};
+		E5E1640658CDBC34CC84427DD32F03F1 = {
+			isa = PBXGroup;
+			children = (
+				3D0F4325226FF8F079AACBF1CCD65BAA,
+				34B68575BE5A6B59FDADA4FF451EE474,
+				CF5D302DE094C0C61C4DD06D519C54E4,
+				45760C851276158D51B95DBDAF4D7E37,
+				0F6EC006ABF3FCCDAD2D60244C94B8E6,
+				DB22DE0B2521FB211E1D89B2500DE8F5,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PageMenu";
+			sourceTree = "<group>";
+		};
+		FC8883131D774F78ED7A34AFB88F4D94 = {
+			isa = PBXGroup;
+			children = (
+				0DA9D0FB99CF9FEC0167AE1A9E1D39E3,
+				C1C7EF4CF775DB5796E1C17D426F0FED,
+				1E3FCEA8503D304C3283AAC647E6C73B,
+				C4122D752CF182181ADAFB79C2CF16FE,
+				3E9F9D745EDB3F8996345E983F02BE0E,
+				74432D81713C58334CACC4E41896E4D5,
+				F7022A552881345248DCDE271E277D2D,
+				57FEE469C65F5041DD9AB012F343C545,
+				E2E62FB0C9CEAD514CC8886FDD900165,
+				8E6D4CE77417656679C259840A89C195,
+			);
+			name = "Pods-SkippoUITests";
+			path = "Target Support Files/Pods-SkippoUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		301C97373C4F14CEF3B2FBE22E0D817E = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F350A9AFAADDD29EE383CBBADDEDD7B8,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBF301E59AFD4E3C0D4CABF02FC07AFB = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5955ED02C11EAA7CC4F682EC6C325C3E,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C649FB80E2D7A80904670C6F6F1C84D1 = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A45D8FFF0516B315A633432AB7601F7,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCF4CE2BE4C0A4CEEE8F829E1AB3371F = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				281105B0FD1288C361E359A168CE4B80,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1676F4F48CE575DB0180773DF58F70B2 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B91BCC719AAE5DA321706566491F1DB;
+			buildPhases = (
+				57F3AA95642F305E7860EB7E6CB1FB4C,
+				F21A661CF1E826552A29E430859C3CC2,
+				FCF4CE2BE4C0A4CEEE8F829E1AB3371F,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SkippoUITests";
+			productName = "Pods-SkippoUITests";
+			productReference = 7E61293ED49D861BCE4EDC749284D9DD;
+			productType = "com.apple.product-type.framework";
+		};
+		21C461B0CAD90DE64B07A5D212C5F829 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD80BA95D68F87EAD97E01F63171E287;
+			buildPhases = (
+				BE4773BA65A16D7C82A01FCB22D49165,
+				AA5FBE46555305C54A71B3C929671293,
+				C649FB80E2D7A80904670C6F6F1C84D1,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PageMenu;
+			productName = PageMenu;
+			productReference = 7B3E70EAAF6FEBCD5E58BC0CAD86C7BA;
+			productType = "com.apple.product-type.framework";
+		};
+		8879FF9413EAFE9F221858146DEA659F = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24781FC176A49D593FFA1326DDEBEDB5;
+			buildPhases = (
+				FC922D8146FBECD9E3B8BC9B876F0FE5,
+				4B525BD723F79F5D36AA62E98AE2296F,
+				BBF301E59AFD4E3C0D4CABF02FC07AFB,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				167080C2676DDBCCB4856B3D06B52EA0,
+			);
+			name = "Pods-Skippo";
+			productName = "Pods-Skippo";
+			productReference = 912BD6DCD118B1E72E5B068B91455337;
+			productType = "com.apple.product-type.framework";
+		};
+		8B8F03BEC7D7B193722C1A5DD479BFA5 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8938A931D231CBE5B44B91537E775BFF;
+			buildPhases = (
+				6DE7CC4193BD6E4F5D38A299D3E1636C,
+				E515F623FC01F77FC91F9BD70A99352A,
+				301C97373C4F14CEF3B2FBE22E0D817E,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SkippoTests";
+			productName = "Pods-SkippoTests";
+			productReference = 82EC345FEB04C83FEF693DBC41E045B2;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 47E6CF096CA0C13ACF49E354B8A95250;
+			projectDirPath = "";
+			projectReferences = (
+			);
+			projectRoot = "";
+			targets = (
+				21C461B0CAD90DE64B07A5D212C5F829,
+				8879FF9413EAFE9F221858146DEA659F,
+				8B8F03BEC7D7B193722C1A5DD479BFA5,
+				1676F4F48CE575DB0180773DF58F70B2,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		57F3AA95642F305E7860EB7E6CB1FB4C = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				442F6F3E5354CA3A3196D3DE8D55BCBE,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DE7CC4193BD6E4F5D38A299D3E1636C = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2913F8E4E40D5CE2C1C2DE026A8A5BB6,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE4773BA65A16D7C82A01FCB22D49165 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19B00B2A0FB18D86BD4DF7E53DFA938A,
+				162C4DEF7E955E19A1B31C3969A71F44,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC922D8146FBECD9E3B8BC9B876F0FE5 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3703099D777463B05E005B443507264,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		167080C2676DDBCCB4856B3D06B52EA0 = {
+			isa = PBXTargetDependency;
+			name = PageMenu;
+			target = 21C461B0CAD90DE64B07A5D212C5F829;
+			targetProxy = A4F2867A754C9B4B2D8A60BDDD967AD7;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3E5E4B0260345B1A34E647D5E78BC393 = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7DB7F6A6109DF7106CD5CB7B7383087;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Skippo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Skippo/Pods-Skippo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Skippo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4EE3044426E73F311F2FC1F02F514886 = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D514E0A10121B0C95357A32108EDCD2;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SkippoTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SkippoTests/Pods-SkippoTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SkippoTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5F7E268A8639A9B4714538140D6B2423 = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 621B04F02033B33EB4DE0F1EBCA9EB8A;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Skippo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Skippo/Pods-Skippo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Skippo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6ACF946E66C0174D5860B76DE59B263B = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF5D302DE094C0C61C4DD06D519C54E4;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PageMenu/PageMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PageMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PageMenu/PageMenu.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PageMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D128BAE63E10BB883775D35ACC397F34 = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E6D4CE77417656679C259840A89C195;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SkippoUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SkippoUITests/Pods-SkippoUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SkippoUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D560687C2EAA7604298B56AEE78343D9 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA9F6F39A3D393343305C43CBC5ABF8E = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2E62FB0C9CEAD514CC8886FDD900165;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SkippoUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SkippoUITests/Pods-SkippoUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SkippoUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EE30C6443F518C98C374C4EA5BB4C55E = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53A1ABA66D0589FFCB7E51A92F65B38B;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SkippoTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SkippoTests/Pods-SkippoTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SkippoTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F1CACC81189ECB1BB82CE47F73EBE3D1 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F3A647F9DC6EA4603BB2DCB3C4F7A216 = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF5D302DE094C0C61C4DD06D519C54E4;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PageMenu/PageMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PageMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PageMenu/PageMenu.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PageMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24781FC176A49D593FFA1326DDEBEDB5 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F7E268A8639A9B4714538140D6B2423,
+				3E5E4B0260345B1A34E647D5E78BC393,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B91BCC719AAE5DA321706566491F1DB = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA9F6F39A3D393343305C43CBC5ABF8E,
+				D128BAE63E10BB883775D35ACC397F34,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1CACC81189ECB1BB82CE47F73EBE3D1,
+				D560687C2EAA7604298B56AEE78343D9,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8938A931D231CBE5B44B91537E775BFF = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EE3044426E73F311F2FC1F02F514886,
+				EE30C6443F518C98C374C4EA5BB4C55E,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD80BA95D68F87EAD97E01F63171E287 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ACF946E66C0174D5860B76DE59B263B,
+				F3A647F9DC6EA4603BB2DCB3C4F7A216,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E;
+}
