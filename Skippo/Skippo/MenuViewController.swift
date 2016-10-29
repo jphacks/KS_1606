@@ -11,6 +11,11 @@ import UIKit
 class MenuViewController: UIViewController {
     
     @IBOutlet weak var mainView: UIView!
+    
+    
+    
+    
+    
     var pageMenu : CAPSPageMenu?
     override func viewDidLoad() {
         super.viewDidLoad()

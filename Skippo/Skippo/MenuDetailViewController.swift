@@ -10,9 +10,9 @@ import UIKit
 
 class MenuDetailViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
- 
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
