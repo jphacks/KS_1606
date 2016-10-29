@@ -1,0 +1,62 @@
+# ===================================
+# Bundle, Bower
+# ===================================
+/.bundle
+/vendor/bundle
+/vendor/bundler
+/vendor/assets/bower_components
+
+# ===================================
+# SQLite
+# ===================================
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# ===================================
+# ログファイルなど
+# ===================================
+/log/*.log
+/tmp
+*.log
+
+# ===================================
+# 設定
+# ===================================
+/config/settings.local.yml
+/config/settings/*.local.yml
+/config/environments/*.local.yml
+
+# ===================================
+# Public
+# ===================================
+/public/cache
+/public/system
+/public/uploads
+/public/assets
+!/public/assets/web/themes/default/assets/fonts
+
+# ===================================
+# 環境変数
+# ===================================
+.rbenv-vars
+.env
+
+# ===================================
+# その他
+# ===================================
+doc/
+*.swp
+*~
+.project
+.DS_Store
+.idea
+.secret
+*.rbc
+capybara-*.html
+.rspec
+/coverage/
+/spec/tmp
+**.orig
+rerun.txt
+pickle-email-*.html
+.rvmrc
