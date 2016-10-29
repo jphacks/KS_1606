@@ -7,6 +7,8 @@ html
     title AdminLTE 2 | Starter
     /! Tell the browser to be responsive to screen width
     meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" /
+    = stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    = stylesheet_link_tag "http://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css"
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
@@ -18,12 +20,7 @@ html
         a.logo href="https://almsaeedstudio.com/themes/AdminLTE/index2.html" 
           /! mini logo for sidebar mini 50x50 pixels
           span.logo-mini
-            b> A
-            | LT
-          /! logo for regular state and mobile devices
-          span.logo-lg
-            b> Admin
-            | LTE
+            strong Skippo
         /! Header Navbar
         nav.navbar.navbar-static-top role="navigation" 
           /! Sidebar toggle button
