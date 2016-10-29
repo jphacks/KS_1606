@@ -1,0 +1,6 @@
+framework module Pods_SkippoUITests {
+  umbrella header "Pods-SkippoUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

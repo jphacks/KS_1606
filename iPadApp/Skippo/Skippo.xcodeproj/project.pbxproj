@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E9AEB21F6C5D2AE3D731720 /* Pods_Skippo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2984EA51D0DFB2E873660E7F /* Pods_Skippo.framework */; };
+		A42B4DEF1DC4259400189153 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42B4DEE1DC4259400189153 /* AppDelegate.swift */; };
+		A42B4DF11DC4259400189153 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42B4DF01DC4259400189153 /* ViewController.swift */; };
+		A42B4DF41DC4259400189153 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A42B4DF21DC4259400189153 /* Main.storyboard */; };
+		A42B4DF61DC4259400189153 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A42B4DF51DC4259400189153 /* Assets.xcassets */; };
+		A42B4DF91DC4259400189153 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A42B4DF71DC4259400189153 /* LaunchScreen.storyboard */; };
+		A42B4E041DC4259400189153 /* SkippoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42B4E031DC4259400189153 /* SkippoTests.swift */; };
+		A42B4E0F1DC4259400189153 /* SkippoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42B4E0E1DC4259400189153 /* SkippoUITests.swift */; };
+		A438B9941DC484A7006683A0 /* decision8.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A438B9931DC484A7006683A0 /* decision8.mp3 */; };
+		A4A410BC1DC43BC4009DEE47 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A410BB1DC43BC4009DEE47 /* ResultViewController.swift */; };
+		A4A410BE1DC43C99009DEE47 /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A410BD1DC43C99009DEE47 /* ResultTableViewCell.swift */; };
+		A4FE1ADE1DC46D2D0025AB6D /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FE1ADD1DC46D2D0025AB6D /* UIColor.swift */; };
+		A4FE1AE01DC472830025AB6D /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FE1ADF1DC472830025AB6D /* UIView.swift */; };
+		C01AAA5FCAB75E0071A81400 /* Pods_SkippoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAEF203D6D3F490D130B7F63 /* Pods_SkippoTests.framework */; };
+		F58263B713E1660939F6BD3F /* Pods_SkippoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 643C1920575938DA969A7C0C /* Pods_SkippoUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A42B4E001DC4259400189153 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A42B4DE31DC4259300189153 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A42B4DEA1DC4259300189153;
+			remoteInfo = Skippo;
+		};
+		A42B4E0B1DC4259400189153 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A42B4DE31DC4259300189153 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A42B4DEA1DC4259300189153;
+			remoteInfo = Skippo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		227883CF49BA84652F730FF2 /* Pods-SkippoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkippoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SkippoUITests/Pods-SkippoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2984EA51D0DFB2E873660E7F /* Pods_Skippo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Skippo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		643C1920575938DA969A7C0C /* Pods_SkippoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkippoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E85930A0D6A8457A3CF1239 /* Pods-SkippoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkippoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SkippoUITests/Pods-SkippoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8F9EBD821665971A3B63517B /* Pods-Skippo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skippo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Skippo/Pods-Skippo.release.xcconfig"; sourceTree = "<group>"; };
+		A42B4DEB1DC4259400189153 /* Skippo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skippo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A42B4DEE1DC4259400189153 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A42B4DF01DC4259400189153 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A42B4DF31DC4259400189153 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A42B4DF51DC4259400189153 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A42B4DF81DC4259400189153 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A42B4DFA1DC4259400189153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A42B4DFF1DC4259400189153 /* SkippoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkippoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A42B4E031DC4259400189153 /* SkippoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkippoTests.swift; sourceTree = "<group>"; };
+		A42B4E051DC4259400189153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A42B4E0A1DC4259400189153 /* SkippoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkippoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A42B4E0E1DC4259400189153 /* SkippoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkippoUITests.swift; sourceTree = "<group>"; };
+		A42B4E101DC4259400189153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A438B9931DC484A7006683A0 /* decision8.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = decision8.mp3; sourceTree = "<group>"; };
+		A4A410BB1DC43BC4009DEE47 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		A4A410BD1DC43C99009DEE47 /* ResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
+		A4FE1ADD1DC46D2D0025AB6D /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		A4FE1ADF1DC472830025AB6D /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		BAEF203D6D3F490D130B7F63 /* Pods_SkippoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkippoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF5B4EABD59A0E8948FFA93C /* Pods-SkippoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkippoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SkippoTests/Pods-SkippoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E029F6FE2107CDD4B15CB5F7 /* Pods-Skippo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skippo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Skippo/Pods-Skippo.debug.xcconfig"; sourceTree = "<group>"; };
+		EEFEE4A9599DDF24AD0E64F7 /* Pods-SkippoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkippoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SkippoTests/Pods-SkippoTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A42B4DE81DC4259300189153 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E9AEB21F6C5D2AE3D731720 /* Pods_Skippo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A42B4DFC1DC4259400189153 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C01AAA5FCAB75E0071A81400 /* Pods_SkippoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A42B4E071DC4259400189153 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F58263B713E1660939F6BD3F /* Pods_SkippoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		856C3CB140FA4B09FA0A55A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2984EA51D0DFB2E873660E7F /* Pods_Skippo.framework */,
+				BAEF203D6D3F490D130B7F63 /* Pods_SkippoTests.framework */,
+				643C1920575938DA969A7C0C /* Pods_SkippoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A42B4DE21DC4259300189153 = {
+			isa = PBXGroup;
+			children = (
+				A42B4DED1DC4259400189153 /* Skippo */,
+				A42B4E021DC4259400189153 /* SkippoTests */,
+				A42B4E0D1DC4259400189153 /* SkippoUITests */,
+				A42B4DEC1DC4259400189153 /* Products */,
+				DFFD1EFC2791627A5F2EF6F6 /* Pods */,
+				856C3CB140FA4B09FA0A55A8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A42B4DEC1DC4259400189153 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A42B4DEB1DC4259400189153 /* Skippo.app */,
+				A42B4DFF1DC4259400189153 /* SkippoTests.xctest */,
+				A42B4E0A1DC4259400189153 /* SkippoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A42B4DED1DC4259400189153 /* Skippo */ = {
+			isa = PBXGroup;
+			children = (
+				A42B4DEE1DC4259400189153 /* AppDelegate.swift */,
+				A4FE1ADD1DC46D2D0025AB6D /* UIColor.swift */,
+				A42B4DF01DC4259400189153 /* ViewController.swift */,
+				A4FE1ADF1DC472830025AB6D /* UIView.swift */,
+				A42B4DF21DC4259400189153 /* Main.storyboard */,
+				A4A410BB1DC43BC4009DEE47 /* ResultViewController.swift */,
+				A4A410BD1DC43C99009DEE47 /* ResultTableViewCell.swift */,
+				A438B9931DC484A7006683A0 /* decision8.mp3 */,
+				A42B4DF51DC4259400189153 /* Assets.xcassets */,
+				A42B4DF71DC4259400189153 /* LaunchScreen.storyboard */,
+				A42B4DFA1DC4259400189153 /* Info.plist */,
+			);
+			path = Skippo;
+			sourceTree = "<group>";
+		};
+		A42B4E021DC4259400189153 /* SkippoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A42B4E031DC4259400189153 /* SkippoTests.swift */,
+				A42B4E051DC4259400189153 /* Info.plist */,
+			);
+			path = SkippoTests;
+			sourceTree = "<group>";
+		};
+		A42B4E0D1DC4259400189153 /* SkippoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A42B4E0E1DC4259400189153 /* SkippoUITests.swift */,
+				A42B4E101DC4259400189153 /* Info.plist */,
+			);
+			path = SkippoUITests;
+			sourceTree = "<group>";
+		};
+		DFFD1EFC2791627A5F2EF6F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E029F6FE2107CDD4B15CB5F7 /* Pods-Skippo.debug.xcconfig */,
+				8F9EBD821665971A3B63517B /* Pods-Skippo.release.xcconfig */,
+				CF5B4EABD59A0E8948FFA93C /* Pods-SkippoTests.debug.xcconfig */,
+				EEFEE4A9599DDF24AD0E64F7 /* Pods-SkippoTests.release.xcconfig */,
+				227883CF49BA84652F730FF2 /* Pods-SkippoUITests.debug.xcconfig */,
+				7E85930A0D6A8457A3CF1239 /* Pods-SkippoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A42B4DEA1DC4259300189153 /* Skippo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A42B4E131DC4259400189153 /* Build configuration list for PBXNativeTarget "Skippo" */;
+			buildPhases = (
+				680C98CEA4319D1EA213CBC2 /* [CP] Check Pods Manifest.lock */,
+				A42B4DE71DC4259300189153 /* Sources */,
+				A42B4DE81DC4259300189153 /* Frameworks */,
+				A42B4DE91DC4259300189153 /* Resources */,
+				B34DF69F45BC636B87F87790 /* [CP] Embed Pods Frameworks */,
+				6745C365DBE1E2BA5716D627 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Skippo;
+			productName = Skippo;
+			productReference = A42B4DEB1DC4259400189153 /* Skippo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A42B4DFE1DC4259400189153 /* SkippoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A42B4E161DC4259400189153 /* Build configuration list for PBXNativeTarget "SkippoTests" */;
+			buildPhases = (
+				8B25AF7B9F5CB3885635DD74 /* [CP] Check Pods Manifest.lock */,
+				A42B4DFB1DC4259400189153 /* Sources */,
+				A42B4DFC1DC4259400189153 /* Frameworks */,
+				A42B4DFD1DC4259400189153 /* Resources */,
+				08323405B6D88DCED3EBC926 /* [CP] Embed Pods Frameworks */,
+				7930B88573438D11994BD924 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A42B4E011DC4259400189153 /* PBXTargetDependency */,
+			);
+			name = SkippoTests;
+			productName = SkippoTests;
+			productReference = A42B4DFF1DC4259400189153 /* SkippoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A42B4E091DC4259400189153 /* SkippoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A42B4E191DC4259400189153 /* Build configuration list for PBXNativeTarget "SkippoUITests" */;
+			buildPhases = (
+				1FBE5E16DA2112CB9A5611B4 /* [CP] Check Pods Manifest.lock */,
+				A42B4E061DC4259400189153 /* Sources */,
+				A42B4E071DC4259400189153 /* Frameworks */,
+				A42B4E081DC4259400189153 /* Resources */,
+				D4CA0D714B98955A4E2DBD52 /* [CP] Embed Pods Frameworks */,
+				EFFEF74CAE21BAE172F50AA2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A42B4E0C1DC4259400189153 /* PBXTargetDependency */,
+			);
+			name = SkippoUITests;
+			productName = SkippoUITests;
+			productReference = A42B4E0A1DC4259400189153 /* SkippoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A42B4DE31DC4259300189153 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = maekawakazuma;
+				TargetAttributes = {
+					A42B4DEA1DC4259300189153 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2E5E462W28;
+						ProvisioningStyle = Automatic;
+					};
+					A42B4DFE1DC4259400189153 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A42B4DEA1DC4259300189153;
+					};
+					A42B4E091DC4259400189153 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A42B4DEA1DC4259300189153;
+					};
+				};
+			};
+			buildConfigurationList = A42B4DE61DC4259300189153 /* Build configuration list for PBXProject "Skippo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A42B4DE21DC4259300189153;
+			productRefGroup = A42B4DEC1DC4259400189153 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A42B4DEA1DC4259300189153 /* Skippo */,
+				A42B4DFE1DC4259400189153 /* SkippoTests */,
+				A42B4E091DC4259400189153 /* SkippoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A42B4DE91DC4259300189153 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A42B4DF91DC4259400189153 /* LaunchScreen.storyboard in Resources */,
+				A438B9941DC484A7006683A0 /* decision8.mp3 in Resources */,
+				A42B4DF61DC4259400189153 /* Assets.xcassets in Resources */,
+				A42B4DF41DC4259400189153 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A42B4DFD1DC4259400189153 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A42B4E081DC4259400189153 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08323405B6D88DCED3EBC926 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SkippoTests/Pods-SkippoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1FBE5E16DA2112CB9A5611B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6745C365DBE1E2BA5716D627 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Skippo/Pods-Skippo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		680C98CEA4319D1EA213CBC2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7930B88573438D11994BD924 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SkippoTests/Pods-SkippoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B25AF7B9F5CB3885635DD74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B34DF69F45BC636B87F87790 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Skippo/Pods-Skippo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4CA0D714B98955A4E2DBD52 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SkippoUITests/Pods-SkippoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFFEF74CAE21BAE172F50AA2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SkippoUITests/Pods-SkippoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A42B4DE71DC4259300189153 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A42B4DF11DC4259400189153 /* ViewController.swift in Sources */,
+				A42B4DEF1DC4259400189153 /* AppDelegate.swift in Sources */,
+				A4A410BE1DC43C99009DEE47 /* ResultTableViewCell.swift in Sources */,
+				A4A410BC1DC43BC4009DEE47 /* ResultViewController.swift in Sources */,
+				A4FE1AE01DC472830025AB6D /* UIView.swift in Sources */,
+				A4FE1ADE1DC46D2D0025AB6D /* UIColor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A42B4DFB1DC4259400189153 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A42B4E041DC4259400189153 /* SkippoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A42B4E061DC4259400189153 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A42B4E0F1DC4259400189153 /* SkippoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A42B4E011DC4259400189153 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A42B4DEA1DC4259300189153 /* Skippo */;
+			targetProxy = A42B4E001DC4259400189153 /* PBXContainerItemProxy */;
+		};
+		A42B4E0C1DC4259400189153 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A42B4DEA1DC4259300189153 /* Skippo */;
+			targetProxy = A42B4E0B1DC4259400189153 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A42B4DF21DC4259400189153 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A42B4DF31DC4259400189153 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A42B4DF71DC4259400189153 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A42B4DF81DC4259400189153 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A42B4E111DC4259400189153 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		A42B4E121DC4259400189153 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A42B4E141DC4259400189153 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E029F6FE2107CDD4B15CB5F7 /* Pods-Skippo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2E5E462W28;
+				INFOPLIST_FILE = Skippo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.planningdev.Skippo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		A42B4E151DC4259400189153 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F9EBD821665971A3B63517B /* Pods-Skippo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2E5E462W28;
+				INFOPLIST_FILE = Skippo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.planningdev.Skippo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		A42B4E171DC4259400189153 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF5B4EABD59A0E8948FFA93C /* Pods-SkippoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SkippoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.planningdev.SkippoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Skippo.app/Skippo";
+			};
+			name = Debug;
+		};
+		A42B4E181DC4259400189153 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEFEE4A9599DDF24AD0E64F7 /* Pods-SkippoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SkippoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.planningdev.SkippoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Skippo.app/Skippo";
+			};
+			name = Release;
+		};
+		A42B4E1A1DC4259400189153 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 227883CF49BA84652F730FF2 /* Pods-SkippoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SkippoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.planningdev.SkippoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Skippo;
+			};
+			name = Debug;
+		};
+		A42B4E1B1DC4259400189153 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E85930A0D6A8457A3CF1239 /* Pods-SkippoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SkippoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.planningdev.SkippoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Skippo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A42B4DE61DC4259300189153 /* Build configuration list for PBXProject "Skippo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A42B4E111DC4259400189153 /* Debug */,
+				A42B4E121DC4259400189153 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A42B4E131DC4259400189153 /* Build configuration list for PBXNativeTarget "Skippo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A42B4E141DC4259400189153 /* Debug */,
+				A42B4E151DC4259400189153 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A42B4E161DC4259400189153 /* Build configuration list for PBXNativeTarget "SkippoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A42B4E171DC4259400189153 /* Debug */,
+				A42B4E181DC4259400189153 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A42B4E191DC4259400189153 /* Build configuration list for PBXNativeTarget "SkippoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A42B4E1A1DC4259400189153 /* Debug */,
+				A42B4E1B1DC4259400189153 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A42B4DE31DC4259300189153 /* Project object */;
+}
