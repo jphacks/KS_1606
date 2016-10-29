@@ -1,0 +1,278 @@
+doctype html
+
+html
+  head
+    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
+    meta content="IE=edge" http-equiv="X-UA-Compatible" /
+    title AdminLTE 2 | Starter
+    /! Tell the browser to be responsive to screen width
+    meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" /
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  body.skin-blue.sidebar-mini data-pinterest-extension-installed="cr2.0.4" 
+    .wrapper
+      /! Main Header
+      header.main-header
+        /! Logo
+        a.logo href="https://almsaeedstudio.com/themes/AdminLTE/index2.html" 
+          /! mini logo for sidebar mini 50x50 pixels
+          span.logo-mini
+            b> A
+            | LT
+          /! logo for regular state and mobile devices
+          span.logo-lg
+            b> Admin
+            | LTE
+        /! Header Navbar
+        nav.navbar.navbar-static-top role="navigation" 
+          /! Sidebar toggle button
+          a.sidebar-toggle data-toggle="offcanvas" href="https://almsaeedstudio.com/themes/AdminLTE/starter.html#" role="button" 
+            span.sr-only Toggle navigation
+          /! Navbar Right Menu
+          .navbar-custom-menu
+            ul.nav.navbar-nav
+              /! Messages: style can be found in dropdown.less
+              li.dropdown.messages-menu
+                /! Menu toggle button
+                a.dropdown-toggle data-toggle="dropdown" href="https://almsaeedstudio.com/themes/AdminLTE/starter.html#" 
+                  i.fa.fa-envelope-o
+                  span.label.label-success 4
+                ul.dropdown-menu
+                  li.header You have 4 messages
+                  li
+                    /! inner menu: contains the messages
+                    ul.menu
+                      li
+                        /! start message
+                        a href="https://almsaeedstudio.com/themes/AdminLTE/starter.html#" 
+                        .pull-left
+                          /! User Image
+                          img.img-circle alt=("User Image") src="#{image_path('admin-lte/dist/img/user2-160x160.jpg')}" /
+                        /! Message title and timestamp
+                        h4
+                          | Support Team
+                          small
+                            i.fa.fa-clock-o
+                            | 5 mins
+                        /! The message
+                        p Why not buy a new awesome theme?
+                      /! end message
+                    /! /.menu
+                  li.footer
+                    a href="https://almsaeedstudio.com/themes/AdminLTE/starter.html#"  See All Messages
+              /! /.messages-menu
+              /! Notifications Menu
+              li.dropdown.notifications-menu
+                /! Menu toggle button
+                a.dropdown-toggle data-toggle="dropdown" href="https://almsaeedstudio.com/themes/AdminLTE/starter.html#" 
+                  i.fa.fa-bell-o
+                  span.label.label-warning 10
+                ul.dropdown-menu
+                  li.header You have 10 notifications
+                  li
+                    /! Inner Menu: contains the notifications
+                    ul.menu
+                      li
+                        /! start notification
+                        a href="https://almsaeedstudio.com/themes/AdminLTE/starter.html#" 
+                          i.fa.fa-users.text-aqua
+                          | 5 new members joined today
+                      /! end notification
+                  li.footer
+                    a href="https://almsaeedstudio.com/themes/AdminLTE/starter.html#"  View all
+              /! Tasks Menu
+              li.dropdown.tasks-menu
+                /! Menu Toggle Button
+                a.dropdown-toggle data-toggle="dropdown" href="https://almsaeedstudio.com/themes/AdminLTE/starter.html#" 
+                  i.fa.fa-flag-o
+                  span.label.label-danger 9
+                ul.dropdown-menu
+                  li.header You have 9 tasks
+                  li
+                    /! Inner menu: contains the tasks
+                    ul.menu
+                      li
+                        /! Task item
+                        a href="https://almsaeedstudio.com/themes/AdminLTE/starter.html#" 
+                          /! Task title and progress text
+                        h3
+                          | Design some buttons
+                          small.pull-right 20%
+                        /! The progress bar
+                        .progress.xs
+                          /! Change the css width attribute to simulate progress
+                          .progress-bar.progress-bar-aqua aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" role="progressbar" style=("width: 20%") 
+                            span.sr-only 20% Complete
+                      /! end task item
+                  li.footer
+                    a href="https://almsaeedstudio.com/themes/AdminLTE/starter.html#"  View all tasks
+              /! User Account Menu
+              li.dropdown.user.user-menu
+                /! Menu Toggle Button
+                a.dropdown-toggle data-toggle="dropdown" href="https://almsaeedstudio.com/themes/AdminLTE/starter.html#" 
+                  /! The user image in the navbar
+                  img.user-image alt=("User Image") src="#{image_path('admin-lte/dist/img/user2-160x160.jpg')}" /
+                  /! hidden-xs hides the username on small devices so only the image appears.
+                  span.hidden-xs Alexander Pierce
+                ul.dropdown-menu
+                  /! The user image in the menu
+                  li.user-header
+                    img.img-circle alt=("User Image") src="#{image_path('admin-lte/dist/img/user2-160x160.jpg')}" /
+                    p
+                      | Alexander Pierce - Web Developer
+                      small Member since Nov. 2012
+                  /! Menu Body
+                  li.user-body
+                    .row
+                      .col-xs-4.text-center
+                        a href="https://almsaeedstudio.com/themes/AdminLTE/starter.html#"  Followers
+                      .col-xs-4.text-center
+                        a href="https://almsaeedstudio.com/themes/AdminLTE/starter.html#"  Sales
+                      .col-xs-4.text-center
+                        a href="https://almsaeedstudio.com/themes/AdminLTE/starter.html#"  Friends
+                    /! /.row
+                  /! Menu Footer
+                  li.user-footer
+                    .pull-left
+                      a.btn.btn-default.btn-flat href="https://almsaeedstudio.com/themes/AdminLTE/starter.html#"  Profile
+                    .pull-right
+                      a.btn.btn-default.btn-flat href="https://almsaeedstudio.com/themes/AdminLTE/starter.html#"  Sign out
+              /! Control Sidebar Toggle Button
+              li
+                a data-toggle="control-sidebar" href="https://almsaeedstudio.com/themes/AdminLTE/starter.html#" 
+                  i.fa.fa-gears
+      /! Left side column. contains the logo and sidebar
+      aside.main-sidebar
+        /! sidebar: style can be found in sidebar.less
+        section.sidebar
+          /! Sidebar user panel (optional)
+          .user-panel
+            .pull-left.image
+              img.img-circle alt=("User Image") src="#{image_path('admin-lte/dist/img/user2-160x160.jpg')}" /
+            .pull-left.info
+              p Alexander Pierce
+              /! Status
+              a href="https://almsaeedstudio.com/themes/AdminLTE/starter.html#" 
+                i.fa.fa-circle.text-success
+                | Online
+          /! search form (Optional)
+          form.sidebar-form action="https://almsaeedstudio.com/themes/AdminLTE/starter.html#" method="get" 
+            .input-group
+              input.form-control name="q" placeholder="Search..." type="text" /
+              span.input-group-btn
+                button#search-btn.btn.btn-flat name="search" type="submit" 
+                  i.fa.fa-search
+          /! /.search form
+          /! Sidebar Menu
+          ul.sidebar-menu
+            li.header HEADER
+            /! Optionally, you can add icons to the links
+            li.active
+              a href="https://almsaeedstudio.com/themes/AdminLTE/starter.html#" 
+                i.fa.fa-link
+                span Link
+            li
+              a href="https://almsaeedstudio.com/themes/AdminLTE/starter.html#" 
+                i.fa.fa-link
+                span Another Link
+            li.treeview
+              a href="https://almsaeedstudio.com/themes/AdminLTE/starter.html#" 
+                i.fa.fa-link
+                span Multilevel
+                span.pull-right-container
+                  i.fa.fa-angle-left.pull-right
+              ul.treeview-menu
+                li
+                  a href="https://almsaeedstudio.com/themes/AdminLTE/starter.html#"  Link in level 2
+                li
+                  a href="https://almsaeedstudio.com/themes/AdminLTE/starter.html#"  Link in level 2
+          /! /.sidebar-menu
+        /! /.sidebar
+      /! Content Wrapper. Contains page content
+      .content-wrapper style=("min-height: 535px;") 
+        div style=("padding: 20px 30px; background: rgb(243, 156, 18); z-index: 999999; font-size: 16px; font-weight: 600;")
+          a.pull-right data-placement="left" data-toggle="tooltip" href="https://almsaeedstudio.com/themes/AdminLTE/starter.html#" style=("color: rgb(255, 255, 255); font-size: 20px;") title=("Never show me this again!")  ×
+          a href="https://themequarry.com/" style=("color: rgba(255, 255, 255, 0.901961); display: inline-block; margin-right: 10px; text-decoration: none;") Ready to sell your theme? Submit your theme to our new marketplace now and let over 200k visitors see it!
+          a.btn.btn-default.btn-sm href="https://themequarry.com/" style=("margin-top: -5px; border: 0px; box-shadow: none; color: rgb(243, 156, 18); font-weight: 600; background: rgb(255, 255, 255);")
+        /! Content Header (Page header)
+        section.content-header
+          h1
+            | Page Header
+            small Optional description
+          ol.breadcrumb
+            li
+              a href="https://almsaeedstudio.com/themes/AdminLTE/starter.html#" 
+                i.fa.fa-dashboard
+                | Level
+            li.active Here
+        = yield
+        /! /.content
+      /! /.content-wrapper
+      /! Main Footer
+      footer.main-footer
+        /! To the right
+        .pull-right.hidden-xs
+          | Anything you want
+        /! Default to the left
+        strong
+          | Copyright © 2016 .
+          a href="https://almsaeedstudio.com/themes/AdminLTE/starter.html#" Skippo 
+          | All rights reserved.
+      /! Control Sidebar
+      aside.control-sidebar.control-sidebar-dark
+        /! Create the tabs
+        ul.nav.nav-tabs.nav-justified.control-sidebar-tabs
+          li.active
+            a data-toggle="tab" href="https://almsaeedstudio.com/themes/AdminLTE/starter.html#control-sidebar-home-tab" 
+              i.fa.fa-home
+          li
+            a data-toggle="tab" href="https://almsaeedstudio.com/themes/AdminLTE/starter.html#control-sidebar-settings-tab" 
+              i.fa.fa-gears
+        /! Tab panes
+        .tab-content
+          /! Home tab content
+          #control-sidebar-home-tab.tab-pane.active
+            h3.control-sidebar-heading Recent Activity
+            ul.control-sidebar-menu
+              li
+                a href="javascript::;" 
+                  i.menu-icon.fa.fa-birthday-cake.bg-red
+                .menu-info
+                  h4.control-sidebar-subheading Langdon's Birthday
+                  p Will be 23 on April 24th
+            /! /.control-sidebar-menu
+            h3.control-sidebar-heading Tasks Progress
+            ul.control-sidebar-menu
+              li
+                a href="javascript::;" 
+                h4.control-sidebar-subheading
+                  | Custom Template Design
+                  span.pull-right-container
+                    span.label.label-danger.pull-right 70%
+                .progress.progress-xxs
+                  .progress-bar.progress-bar-danger style=("width: 70%") 
+            /! /.control-sidebar-menu
+          /! /.tab-pane
+          /! Stats tab content
+          #control-sidebar-stats-tab.tab-pane Stats Tab Content
+          /! /.tab-pane
+          /! Settings tab content
+          #control-sidebar-settings-tab.tab-pane
+            form method="post" 
+              h3.control-sidebar-heading General Settings
+              .form-group
+                label.control-sidebar-subheading
+                  | Report panel usage
+                  input.pull-right checked="" type="checkbox" /
+                p
+                  | Some information about this general settings option
+              /! /.form-group
+          /! /.tab-pane
+      /! /.control-sidebar
+
+        | Add the sidebar's background. This div must be placed
+        | immediately after the control sidebar
+      .control-sidebar-bg style=("position: fixed; height: auto;") 
+
+    / span style=("border-radius: 2px; text-indent: 20px; width: auto; padding: 0px 4px 0px 0px; text-align: center; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 11px; line-height: 20px; font-family: &quot;Helvetica Neue&quot;, Helvetica, sans-serif; color: rgb(255, 255, 255); background: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzBweCIgd2lkdGg9IjMwcHgiIHZpZXdCb3g9Ii0xIC0xIDMxIDMxIj48Zz48cGF0aCBkPSJNMjkuNDQ5LDE0LjY2MiBDMjkuNDQ5LDIyLjcyMiAyMi44NjgsMjkuMjU2IDE0Ljc1LDI5LjI1NiBDNi42MzIsMjkuMjU2IDAuMDUxLDIyLjcyMiAwLjA1MSwxNC42NjIgQzAuMDUxLDYuNjAxIDYuNjMyLDAuMDY3IDE0Ljc1LDAuMDY3IEMyMi44NjgsMC4wNjcgMjkuNDQ5LDYuNjAxIDI5LjQ0OSwxNC42NjIiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+PHBhdGggZD0iTTE0LjczMywxLjY4NiBDNy41MTYsMS42ODYgMS42NjUsNy40OTUgMS42NjUsMTQuNjYyIEMxLjY2NSwyMC4xNTkgNS4xMDksMjQuODU0IDkuOTcsMjYuNzQ0IEM5Ljg1NiwyNS43MTggOS43NTMsMjQuMTQzIDEwLjAxNiwyMy4wMjIgQzEwLjI1MywyMi4wMSAxMS41NDgsMTYuNTcyIDExLjU0OCwxNi41NzIgQzExLjU0OCwxNi41NzIgMTEuMTU3LDE1Ljc5NSAxMS4xNTcsMTQuNjQ2IEMxMS4xNTcsMTIuODQyIDEyLjIxMSwxMS40OTUgMTMuNTIyLDExLjQ5NSBDMTQuNjM3LDExLjQ5NSAxNS4xNzUsMTIuMzI2IDE1LjE3NSwxMy4zMjMgQzE1LjE3NSwxNC40MzYgMTQuNDYyLDE2LjEgMTQuMDkzLDE3LjY0MyBDMTMuNzg1LDE4LjkzNSAxNC43NDUsMTkuOTg4IDE2LjAyOCwxOS45ODggQzE4LjM1MSwxOS45ODggMjAuMTM2LDE3LjU1NiAyMC4xMzYsMTQuMDQ2IEMyMC4xMzYsMTAuOTM5IDE3Ljg4OCw4Ljc2NyAxNC42NzgsOC43NjcgQzEwLjk1OSw4Ljc2NyA4Ljc3NywxMS41MzYgOC43NzcsMTQuMzk4IEM4Ljc3NywxNS41MTMgOS4yMSwxNi43MDkgOS43NDksMTcuMzU5IEM5Ljg1NiwxNy40ODggOS44NzIsMTcuNiA5Ljg0LDE3LjczMSBDOS43NDEsMTguMTQxIDkuNTIsMTkuMDIzIDkuNDc3LDE5LjIwMyBDOS40MiwxOS40NCA5LjI4OCwxOS40OTEgOS4wNCwxOS4zNzYgQzcuNDA4LDE4LjYyMiA2LjM4NywxNi4yNTIgNi4zODcsMTQuMzQ5IEM2LjM4NywxMC4yNTYgOS4zODMsNi40OTcgMTUuMDIyLDYuNDk3IEMxOS41NTUsNi40OTcgMjMuMDc4LDkuNzA1IDIzLjA3OCwxMy45OTEgQzIzLjA3OCwxOC40NjMgMjAuMjM5LDIyLjA2MiAxNi4yOTcsMjIuMDYyIEMxNC45NzMsMjIuMDYyIDEzLjcyOCwyMS4zNzkgMTMuMzAyLDIwLjU3MiBDMTMuMzAyLDIwLjU3MiAxMi42NDcsMjMuMDUgMTIuNDg4LDIzLjY1NyBDMTIuMTkzLDI0Ljc4NCAxMS4zOTYsMjYuMTk2IDEwLjg2MywyNy4wNTggQzEyLjA4NiwyNy40MzQgMTMuMzg2LDI3LjYzNyAxNC43MzMsMjcuNjM3IEMyMS45NSwyNy42MzcgMjcuODAxLDIxLjgyOCAyNy44MDEsMTQuNjYyIEMyNy44MDEsNy40OTUgMjEuOTUsMS42ODYgMTQuNzMzLDEuNjg2IiBmaWxsPSIjYmQwODFjIj48L3BhdGg+PC9nPjwvc3ZnPg==&quot; 3px 50% / 14px 14px no-repeat rgb(189, 8, 28); position: absolute; opacity: 1; z-index: 8675309; display: none; cursor: pointer; border: none; -webkit-font-smoothing: antialiased;)保存
