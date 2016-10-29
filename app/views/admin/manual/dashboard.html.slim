@@ -1,4 +1,11 @@
 section.content-header
   h1
     | マニュアル
-    small ダッシュボードにつて
+    small ダッシュボードについて
+  ol.breadcrumb
+    li
+      = link_to root_path do 
+        i.fa.fa-dashboard
+        | Dashboard
+    li.active Manual
+    li.active Dashboard

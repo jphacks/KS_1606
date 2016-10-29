@@ -4,37 +4,171 @@ section.content-header
     | ダッシュボード
     small 管理している店舗の状態を確認することができます。
   ol.breadcrumb
-    li
-      a href="https://almsaeedstudio.com/themes/AdminLTE/starter.html#" 
-        i.fa.fa-dashboard
-        | Level
-    li.active Here
+    li.active 
+      i.fa.fa-dashboard
+      |  Dashboard
   section.content
-    .col-md-3.col-sm-6.col-xs-12
-      .info-box
-        span.info-box-icon.bg-red
-          i.fa.fa-star-o
-        .info-box-content
-          span.info-box-text Likes
-          span.info-box-number 93,139
-    .col-md-3.col-sm-6.col-xs-12
-      .info-box
-        span.info-box-icon.bg-red
-          i.fa.fa-star-o
-        .info-box-content
-          span.info-box-text Likes
-          span.info-box-number 93,139
-    .col-md-3.col-sm-6.col-xs-12
-      .info-box
-        span.info-box-icon.bg-red
-          i.fa.fa-star-o
-        .info-box-content
-          span.info-box-text Likes
-          span.info-box-number 93,139
-    .col-md-3.col-sm-6.col-xs-12
-      .info-box
-        span.info-box-icon.bg-red
-          i.fa.fa-star-o
-        .info-box-content
-          span.info-box-text Likes
-          span.info-box-number 93,139
+    .row
+      .col-md-3.col-sm-6.col-xs-12
+        .info-box.bg-aqua
+          span.info-box-icon
+            i.fa.fa-user
+          .info-box-content
+            span.info-box-text 訪問数
+            span.info-box-number 41,410
+            .progress
+              .progress-bar style=("width: 78%") 
+            span.progress-description
+              | 78% Increase in 30 Days
+          /! /.info-box-content
+        /! /.info-box
+      /! /.col
+      .col-md-3.col-sm-6.col-xs-12
+        .info-box.bg-green
+          span.info-box-icon
+            i.fa.fa-star-o
+          .info-box-content
+            span.info-box-text お気に入り
+            span.info-box-number 710
+            .progress
+              .progress-bar style=("width: 25%") 
+            span.progress-description
+              | 25% Increase in 30 Days
+          /! /.info-box-content
+        /! /.info-box
+      /! /.col
+      .col-md-3.col-sm-6.col-xs-12
+        .info-box.bg-yellow
+          span.info-box-icon
+            i.fa.fa-edit
+          .info-box-content
+            span.info-box-text 注文数
+            span.info-box-number 6,973
+            .progress
+              .progress-bar style=("width: 83%") 
+            span.progress-description
+              | 83% Increase in 30 Days
+          /! /.info-box-content
+        /! /.info-box
+      /! /.col
+      .col-md-3.col-sm-6.col-xs-12
+        .info-box.bg-red
+          span.info-box-icon
+            i.fa.fa-money
+          .info-box-content
+            span.info-box-text 売り上げ
+            span.info-box-number ¥2,345,313
+            .progress
+              .progress-bar style=("width: 98%") 
+            span.progress-description
+              | 83% Increase in 30 Days
+          /! /.info-box-content
+        /! /.info-box
+      /! /.col
+    .box
+      .box-header.with-border
+        h3.box-title 月別レポート
+        .box-tools.pull-right
+          button.btn.btn-box-tool data-widget="collapse" type="button" 
+            i.fa.fa-minus
+          .btn-group
+            button.btn.btn-box-tool.dropdown-toggle data-toggle="dropdown" type="button" 
+              i.fa.fa-wrench
+            ul.dropdown-menu role="menu" 
+              li
+                a href="#"  Action
+              li
+                a href="#"  Another action
+              li
+                a href="#"  Something else here
+              li.divider
+              li
+                a href="#"  Separated link
+          button.btn.btn-box-tool data-widget="remove" type="button" 
+            i.fa.fa-times
+      /! /.box-header
+      .box-body
+        .row
+          .col-md-8
+            p.text-center
+              strong 売り上げ: 2016年9月 〜 10月
+            .chart
+              /! Sales Chart Canvas
+              canvas#salesChart height="406" style=("height: 203px; width: 696px;") width="1392p"
+            /! /.chart-responsive
+          /! /.col
+          .col-md-4
+            p.text-center
+              strong 目標達成まで
+            .progress-group
+              span.progress-text 訪問数
+              span.progress-number
+                b> 41,410
+                | /60,000
+              .progress.sm
+                .progress-bar.progress-bar-aqua style=("width: 78%") 
+            /! /.progress-group
+            .progress-group
+              span.progress-text お気に入り数
+              span.progress-number
+                b> 710
+                | /2,500
+              .progress.sm
+                .progress-bar.progress-bar-red style=("width: 25%") 
+            /! /.progress-group
+            .progress-group
+              span.progress-text 注文数
+              span.progress-number
+                b> 6,973
+                | /8,000
+              .progress.sm
+                .progress-bar.progress-bar-green style=("width: 98%") 
+            /! /.progress-group
+            .progress-group
+              span.progress-text 売り上げ
+              span.progress-number
+                b> ¥2,345,313
+                | /¥2,500,000
+              .progress.sm
+                .progress-bar.progress-bar-yellow style=("width: 80%") 
+            /! /.progress-group
+          /! /.col
+        /! /.row
+      /! ./box-body
+      .box-footer
+        .row
+          .col-sm-3.col-xs-6
+            .description-block.border-right
+              span.description-percentage.text-green
+                i.fa.fa-caret-up
+                | 17%
+              h5.description-header $35,210.43
+              span.description-text TOTAL REVENUE
+            /! /.description-block
+          /! /.col
+          .col-sm-3.col-xs-6
+            .description-block.border-right
+              span.description-percentage.text-yellow
+                i.fa.fa-caret-left
+                | 0%
+              h5.description-header $10,390.90
+              span.description-text TOTAL COST
+            /! /.description-block
+          /! /.col
+          .col-sm-3.col-xs-6
+            .description-block.border-right
+              span.description-percentage.text-green
+                i.fa.fa-caret-up
+                | 20%
+              h5.description-header $24,813.53
+              span.description-text TOTAL PROFIT
+            /! /.description-block
+          /! /.col
+          .col-sm-3.col-xs-6
+            .description-block
+              span.description-percentage.text-red
+                i.fa.fa-caret-down
+                | 18%
+              h5.description-header 1200
+              span.description-text GOAL COMPLETIONS
+            /! /.description-block
