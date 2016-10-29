@@ -8,7 +8,9 @@
 
 import UIKit
 
-class NearByViewController: UIViewController,UITableViewDataSource {
+class NearByViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+    
+    var handler:()->Void = {}
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,10 +28,15 @@ class NearByViewController: UIViewController,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "store", for: indexPath) as! StoreTableViewCell
-        cell.storeImageView.image = UIImage(named: "cat")
+        cell.storeImageView.image = UIImage(named: "mac")
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        handler()
+    }
+
     
 
     /*

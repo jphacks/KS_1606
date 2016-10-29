@@ -1,5 +1,5 @@
 //
-//  TopViewController.swift
+//  MenuViewController.swift
 //  Skippo
 //
 //  Created by 金築良磨 on 2016/10/29.
@@ -8,26 +8,16 @@
 
 import UIKit
 
-class TopViewController: UIViewController {
-
+class MenuViewController: UIViewController {
+    
     @IBOutlet weak var mainView: UIView!
     var pageMenu : CAPSPageMenu?
     override func viewDidLoad() {
         super.viewDidLoad()
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let nearByVC = storyboard.instantiateViewController(withIdentifier: "NearBy") as! NearByViewController
-        let newestVC = storyboard.instantiateViewController(withIdentifier: "NearBy") as! NearByViewController
-        let favoriteVC = storyboard.instantiateViewController(withIdentifier: "Favorite") as! FavoriteViewController
-        
-        nearByVC.handler = {
-            self.performSegue(withIdentifier: "menuSegue", sender: nil)
-        }
-        newestVC.handler = {
-            self.performSegue(withIdentifier: "menuSegue", sender: nil)
-        }
-        favoriteVC.handler = {
-            self.performSegue(withIdentifier: "menuSegue", sender: nil)
-        }
+        let foodVC = storyboard.instantiateViewController(withIdentifier: "menu") as! MenuDetailViewController
+        let drinkVC = storyboard.instantiateViewController(withIdentifier: "menu") as! MenuDetailViewController
+        let sidemenuVC = storyboard.instantiateViewController(withIdentifier: "menu") as! MenuDetailViewController
         
         // Array to keep track of controllers in page menu
         var controllerArray : [UIViewController] = []
@@ -37,13 +27,13 @@ class TopViewController: UIViewController {
         // (Can be any UIViewController subclass)
         // Make sure the title property of all view controllers is set
         // Example:
-        nearByVC.title = "Nearby"
-        newestVC.title = "Newest"
-        favoriteVC.title = "Favotite"
+        foodVC.title = "Food"
+        drinkVC.title = "Drink"
+        sidemenuVC.title = "sidemenu"
         
-        controllerArray.append(nearByVC)
-        controllerArray.append(newestVC)
-        controllerArray.append(favoriteVC)
+        controllerArray.append(foodVC)
+        controllerArray.append(drinkVC)
+        controllerArray.append(sidemenuVC)
         // Do any additional setup after loading the view.
         // Customize page menu to your liking (optional) or use default settings by sending nil for 'options' in the init
         // Example:
@@ -68,25 +58,24 @@ class TopViewController: UIViewController {
         // or use pageMenu controller in you view hierachy as desired
         self.mainView.addSubview(pageMenu!.view)
         
-
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func NearByButton(_ sender: Any) {
-    }
 
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

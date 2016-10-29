@@ -9,6 +9,9 @@
 import UIKit
 
 class FavoriteViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
+    
+    var handler:() -> Void = {}
+    
     @IBOutlet weak var collectionView: UICollectionView!
     private var numbers = [Int]()
     
@@ -62,7 +65,7 @@ class FavoriteViewController: UIViewController,UICollectionViewDelegate,UICollec
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FavoriteCell", for: indexPath) as! FavoriteStoreCollectionViewCell
-        cell.favoriteStore.image = UIImage(named: "cat")
+        cell.favoriteStore.image = UIImage(named: "mac")
         
         return cell
     }
@@ -70,6 +73,10 @@ class FavoriteViewController: UIViewController,UICollectionViewDelegate,UICollec
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let cellSize:CGFloat = collectionView.frame.size.width / 2 - 10
         return CGSize(width: cellSize, height: cellSize)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        handler()
     }
 
     /*
