@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C924B4F1DC4770900EBE097 /* StoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C924B4E1DC4770900EBE097 /* StoreTableViewCell.swift */; };
 		2CE1D7151DC42C4100E12527 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1D7141DC42C4100E12527 /* AppDelegate.swift */; };
 		2CE1D7171DC42C4100E12527 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1D7161DC42C4100E12527 /* ViewController.swift */; };
 		2CE1D71A1DC42C4100E12527 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CE1D7181DC42C4100E12527 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 		2CF67B301DC4373100DE4D7A /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF67B2F1DC4373100DE4D7A /* TopViewController.swift */; };
 		2CF67B321DC43A1700DE4D7A /* NearByViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF67B311DC43A1700DE4D7A /* NearByViewController.swift */; };
 		2CF67B3A1DC444BC00DE4D7A /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF67B391DC444BC00DE4D7A /* CAPSPageMenu.swift */; };
+		2CF67B5B1DC46DB400DE4D7A /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF67B5A1DC46DB400DE4D7A /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C924B4E1DC4770900EBE097 /* StoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreTableViewCell.swift; sourceTree = "<group>"; };
 		2CE1D7111DC42C4100E12527 /* Skippo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skippo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CE1D7141DC42C4100E12527 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CE1D7161DC42C4100E12527 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +57,7 @@
 		2CF67B2F1DC4373100DE4D7A /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 		2CF67B311DC43A1700DE4D7A /* NearByViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearByViewController.swift; sourceTree = "<group>"; };
 		2CF67B391DC444BC00DE4D7A /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
+		2CF67B5A1DC46DB400DE4D7A /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +109,12 @@
 		2CE1D7131DC42C4100E12527 /* Skippo */ = {
 			isa = PBXGroup;
 			children = (
+				2C924B4E1DC4770900EBE097 /* StoreTableViewCell.swift */,
 				2CE1D7141DC42C4100E12527 /* AppDelegate.swift */,
 				2CE1D7161DC42C4100E12527 /* ViewController.swift */,
 				2CE1D7181DC42C4100E12527 /* Main.storyboard */,
 				2CF67B391DC444BC00DE4D7A /* CAPSPageMenu.swift */,
+				2CF67B5A1DC46DB400DE4D7A /* UIColor.swift */,
 				2CF67B311DC43A1700DE4D7A /* NearByViewController.swift */,
 				2CF67B2F1DC4373100DE4D7A /* TopViewController.swift */,
 				2CE1D71B1DC42C4100E12527 /* Assets.xcassets */,
@@ -271,9 +277,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CF67B301DC4373100DE4D7A /* TopViewController.swift in Sources */,
+				2CF67B5B1DC46DB400DE4D7A /* UIColor.swift in Sources */,
 				2CF67B321DC43A1700DE4D7A /* NearByViewController.swift in Sources */,
 				2CF67B3A1DC444BC00DE4D7A /* CAPSPageMenu.swift in Sources */,
 				2CE1D7171DC42C4100E12527 /* ViewController.swift in Sources */,
+				2C924B4F1DC4770900EBE097 /* StoreTableViewCell.swift in Sources */,
 				2CE1D7151DC42C4100E12527 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
