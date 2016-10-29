@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -65,7 +66,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="123"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat" translatesAutoresizingMaskIntoConstraints="NO" id="sI3-P8-0sw">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sI3-P8-0sw">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="123"/>
                                                 </imageView>
                                             </subviews>
@@ -100,6 +101,73 @@
             </objects>
             <point key="canvasLocation" x="2085.5999999999999" y="198.35082458770617"/>
         </scene>
+        <!--Favorite View Controller-->
+        <scene sceneID="fdx-A6-xsf">
+            <objects>
+                <viewController storyboardIdentifier="Favorite" id="zUD-59-Ebh" customClass="FavoriteViewController" customModule="Skippo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vek-5X-MSV"/>
+                        <viewControllerLayoutGuide type="bottom" id="QM7-UP-lqn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FWO-8D-QHn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Sxq-0C-ekx">
+                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BVi-Bw-3OB">
+                                    <size key="itemSize" width="121" height="121"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FavoriteCell" id="Ls5-gK-rrT" customClass="FavoriteStoreCollectionViewCell" customModule="Skippo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="121" height="121"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="121" height="121"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EbY-Hl-3DO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="121" height="121"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="EbY-Hl-3DO" secondAttribute="trailing" id="Hal-ro-rbG"/>
+                                            <constraint firstItem="EbY-Hl-3DO" firstAttribute="top" secondItem="Ls5-gK-rrT" secondAttribute="top" id="Olk-YP-tI5"/>
+                                            <constraint firstItem="EbY-Hl-3DO" firstAttribute="leading" secondItem="Ls5-gK-rrT" secondAttribute="leading" id="fWF-Sl-2Ub"/>
+                                            <constraint firstAttribute="bottom" secondItem="EbY-Hl-3DO" secondAttribute="bottom" id="hhb-5R-g3r"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="favoriteStore" destination="EbY-Hl-3DO" id="hJf-UO-p0O"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="zUD-59-Ebh" id="dxP-gr-Wpc"/>
+                                    <outlet property="delegate" destination="zUD-59-Ebh" id="mGH-Ue-9mr"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QM7-UP-lqn" firstAttribute="top" secondItem="Sxq-0C-ekx" secondAttribute="bottom" id="OKp-V0-1zv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Sxq-0C-ekx" secondAttribute="trailing" id="hvt-3c-G5n"/>
+                            <constraint firstItem="Sxq-0C-ekx" firstAttribute="top" secondItem="Vek-5X-MSV" secondAttribute="bottom" id="nTf-yE-Afl"/>
+                            <constraint firstItem="Sxq-0C-ekx" firstAttribute="leading" secondItem="FWO-8D-QHn" secondAttribute="leadingMargin" id="qGU-xD-RaI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="Sxq-0C-ekx" id="kpR-ZE-wcG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fE7-W7-JJZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2034.4000000000001" y="884.70764617691157"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="L1F-m7-dwu">
             <objects>
@@ -119,7 +187,4 @@
             <point key="canvasLocation" x="168.80000000000001" y="200.14992503748127"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="cat" width="512" height="384"/>
-    </resources>
 </document>

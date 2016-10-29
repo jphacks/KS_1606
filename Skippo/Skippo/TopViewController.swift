@@ -17,7 +17,7 @@ class TopViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let nearByVC = storyboard.instantiateViewController(withIdentifier: "NearBy") as! NearByViewController
         let newestVC = storyboard.instantiateViewController(withIdentifier: "NearBy") as! NearByViewController
-        let favoriteVC = storyboard.instantiateViewController(withIdentifier: "NearBy") as! NearByViewController
+        let favoriteVC = storyboard.instantiateViewController(withIdentifier: "Favorite") as! FavoriteViewController
         
         // Array to keep track of controllers in page menu
         var controllerArray : [UIViewController] = []
