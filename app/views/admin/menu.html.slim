@@ -26,9 +26,17 @@ section.content-header
             label メニュー名
             input.form-control placeholder="例) テキサスバーガー" type="text" /
           .form-group
-            label for="logo" メニューの画像
+            label メニューの画像
             input#input-logo type="file" /
             p.help-block 1:1の画像をアップロードしてください。
+          .form-group
+            label 値段
+            .input-group
+              span.input-group-addon ¥
+              input.form-control type="text" /
+
+  
+
         /! /.box-body
         .box-footer
           button.btn.btn-primary type="submit"  保存
