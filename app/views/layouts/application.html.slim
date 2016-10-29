@@ -168,6 +168,8 @@ html
               = link_to '/' do
                 i.fa.fa-dashboard
                 span ダッシュボード
+                span.pull-right-container
+                  small.label.pull-right.bg-green new
             li.treeview
               = link_to information_path do
                 i.fa.fa-files-o
@@ -176,8 +178,6 @@ html
               = link_to menu_path do
                 i.fa.fa-th
                 span メニュー
-                span.pull-right-container
-                  small.label.pull-right.bg-green new
             li.treeview
               = link_to menu_path do
                 i.fa.fa-pie-chart

@@ -9,3 +9,26 @@ section.content-header
         | About Dashboard
     li.active Information
   section.content
+    .box.box-primary
+      .box-header.with-border
+        h3.box-title 基本情報
+      /! /.box-header
+      /! form start
+      form role="form" 
+        .box-body
+          .form-group
+            label for="conpanyName"  会社名
+            input#exampleInputEmail1.form-control placeholder="例) マクドナルド"
+          .form-group
+            label for="storeName"  店舗名
+            input#exampleInputPassword1.form-control placeholder="例) 新宿店"
+          .form-group
+            label for="address"  住所
+            input#exampleInputPassword1.form-control placeholder="例) 東京都新宿区東京都新宿区戸山３丁目１６"
+          .form-group
+            label for="logo" 会社のロゴマーク
+            input#input-logo type="file" /
+            p.help-block 16:9もしくは1:1の画像をアップロードしてください。
+        /! /.box-body
+        .box-footer
+          button.btn.btn-primary type="submit"  保存
