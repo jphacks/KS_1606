@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FavoriteViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource{
+class FavoriteViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     @IBOutlet weak var collectionView: UICollectionView!
     private var numbers = [Int]()
     
@@ -54,7 +54,8 @@ class FavoriteViewController: UIViewController,UICollectionViewDelegate,UICollec
             collectionView.cancelInteractiveMovement()
         }
     }
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
+
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 25
     }
@@ -64,6 +65,11 @@ class FavoriteViewController: UIViewController,UICollectionViewDelegate,UICollec
         cell.favoriteStore.image = UIImage(named: "cat")
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let cellSize:CGFloat = collectionView.frame.size.width / 2 - 10
+        return CGSize(width: cellSize, height: cellSize)
     }
 
     /*

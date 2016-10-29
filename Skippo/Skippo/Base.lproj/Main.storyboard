@@ -6,7 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -132,6 +132,9 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EbY-Hl-3DO">
                                                     <rect key="frame" x="0.0" y="0.0" width="121" height="121"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="EbY-Hl-3DO" secondAttribute="height" multiplier="1:1" id="RXx-Yb-dni"/>
+                                                    </constraints>
                                                 </imageView>
                                             </subviews>
                                         </view>
@@ -154,10 +157,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="QM7-UP-lqn" firstAttribute="top" secondItem="Sxq-0C-ekx" secondAttribute="bottom" id="OKp-V0-1zv"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Sxq-0C-ekx" secondAttribute="trailing" id="hvt-3c-G5n"/>
-                            <constraint firstItem="Sxq-0C-ekx" firstAttribute="top" secondItem="Vek-5X-MSV" secondAttribute="bottom" id="nTf-yE-Afl"/>
-                            <constraint firstItem="Sxq-0C-ekx" firstAttribute="leading" secondItem="FWO-8D-QHn" secondAttribute="leadingMargin" id="qGU-xD-RaI"/>
+                            <constraint firstItem="Sxq-0C-ekx" firstAttribute="leading" secondItem="FWO-8D-QHn" secondAttribute="leading" constant="16" id="6Qf-Ki-vxV"/>
+                            <constraint firstItem="Sxq-0C-ekx" firstAttribute="top" secondItem="Vek-5X-MSV" secondAttribute="bottom" id="Rbe-4b-5Gk"/>
+                            <constraint firstItem="QM7-UP-lqn" firstAttribute="top" secondItem="Sxq-0C-ekx" secondAttribute="bottom" id="Yde-Uc-qf8"/>
+                            <constraint firstAttribute="trailing" secondItem="Sxq-0C-ekx" secondAttribute="trailing" constant="16" id="erY-dD-8UD"/>
                         </constraints>
                     </view>
                     <connections>
