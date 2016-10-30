@@ -14,7 +14,6 @@
 		2C924B571DC4A46100EBE097 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C924B561DC4A46100EBE097 /* MenuCollectionViewCell.swift */; };
 		2C924B591DC4A59000EBE097 /* MenuDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C924B581DC4A59000EBE097 /* MenuDetailViewController.swift */; };
 		2CE1D7151DC42C4100E12527 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1D7141DC42C4100E12527 /* AppDelegate.swift */; };
-		2CE1D7171DC42C4100E12527 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1D7161DC42C4100E12527 /* ViewController.swift */; };
 		2CE1D71A1DC42C4100E12527 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CE1D7181DC42C4100E12527 /* Main.storyboard */; };
 		2CE1D71C1DC42C4100E12527 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CE1D71B1DC42C4100E12527 /* Assets.xcassets */; };
 		2CE1D71F1DC42C4100E12527 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CE1D71D1DC42C4100E12527 /* LaunchScreen.storyboard */; };
@@ -24,6 +23,9 @@
 		2CF67B321DC43A1700DE4D7A /* NearByViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF67B311DC43A1700DE4D7A /* NearByViewController.swift */; };
 		2CF67B3A1DC444BC00DE4D7A /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF67B391DC444BC00DE4D7A /* CAPSPageMenu.swift */; };
 		2CF67B5B1DC46DB400DE4D7A /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF67B5A1DC46DB400DE4D7A /* UIColor.swift */; };
+		2CFA26C81DC56DC300375021 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA26C71DC56DC300375021 /* QRViewController.swift */; };
+		2CFA26CF1DC571CE00375021 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA26CE1DC571CE00375021 /* Menu.swift */; };
+		2CFA26D11DC573AD00375021 /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA26D01DC573AD00375021 /* MenuModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +54,6 @@
 		2C924B581DC4A59000EBE097 /* MenuDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuDetailViewController.swift; sourceTree = "<group>"; };
 		2CE1D7111DC42C4100E12527 /* Skippo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skippo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CE1D7141DC42C4100E12527 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2CE1D7161DC42C4100E12527 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2CE1D7191DC42C4100E12527 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2CE1D71B1DC42C4100E12527 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CE1D71E1DC42C4100E12527 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -68,6 +69,9 @@
 		2CF67B311DC43A1700DE4D7A /* NearByViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearByViewController.swift; sourceTree = "<group>"; };
 		2CF67B391DC444BC00DE4D7A /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
 		2CF67B5A1DC46DB400DE4D7A /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		2CFA26C71DC56DC300375021 /* QRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
+		2CFA26CE1DC571CE00375021 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		2CFA26D01DC573AD00375021 /* MenuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,21 +123,13 @@
 		2CE1D7131DC42C4100E12527 /* Skippo */ = {
 			isa = PBXGroup;
 			children = (
-				2C924B4E1DC4770900EBE097 /* StoreTableViewCell.swift */,
+				2CFA26CD1DC5718600375021 /* Layout */,
+				2CFA26CC1DC5713300375021 /* Utility */,
+				2CFA26CB1DC5712D00375021 /* Model */,
+				2CFA26CA1DC5712700375021 /* View */,
+				2CFA26C91DC570FF00375021 /* Contoller */,
 				2CE1D7141DC42C4100E12527 /* AppDelegate.swift */,
-				2CE1D7161DC42C4100E12527 /* ViewController.swift */,
-				2CE1D7181DC42C4100E12527 /* Main.storyboard */,
-				2C924B541DC4977A00EBE097 /* MenuViewController.swift */,
-				2C924B521DC47ED000EBE097 /* FavoriteViewController.swift */,
-				2C924B581DC4A59000EBE097 /* MenuDetailViewController.swift */,
-				2C924B501DC47E1A00EBE097 /* FavoriteStoreCollectionViewCell.swift */,
-				2C924B561DC4A46100EBE097 /* MenuCollectionViewCell.swift */,
-				2CF67B391DC444BC00DE4D7A /* CAPSPageMenu.swift */,
-				2CF67B5A1DC46DB400DE4D7A /* UIColor.swift */,
-				2CF67B311DC43A1700DE4D7A /* NearByViewController.swift */,
-				2CF67B2F1DC4373100DE4D7A /* TopViewController.swift */,
 				2CE1D71B1DC42C4100E12527 /* Assets.xcassets */,
-				2CE1D71D1DC42C4100E12527 /* LaunchScreen.storyboard */,
 				2CE1D7201DC42C4100E12527 /* Info.plist */,
 			);
 			path = Skippo;
@@ -155,6 +151,56 @@
 				2CE1D7361DC42C4200E12527 /* Info.plist */,
 			);
 			path = SkippoUITests;
+			sourceTree = "<group>";
+		};
+		2CFA26C91DC570FF00375021 /* Contoller */ = {
+			isa = PBXGroup;
+			children = (
+				2CF67B2F1DC4373100DE4D7A /* TopViewController.swift */,
+				2CF67B311DC43A1700DE4D7A /* NearByViewController.swift */,
+				2C924B521DC47ED000EBE097 /* FavoriteViewController.swift */,
+				2C924B541DC4977A00EBE097 /* MenuViewController.swift */,
+				2C924B581DC4A59000EBE097 /* MenuDetailViewController.swift */,
+				2CFA26C71DC56DC300375021 /* QRViewController.swift */,
+			);
+			name = Contoller;
+			sourceTree = "<group>";
+		};
+		2CFA26CA1DC5712700375021 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C924B4E1DC4770900EBE097 /* StoreTableViewCell.swift */,
+				2C924B501DC47E1A00EBE097 /* FavoriteStoreCollectionViewCell.swift */,
+				2C924B561DC4A46100EBE097 /* MenuCollectionViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2CFA26CB1DC5712D00375021 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2CFA26CE1DC571CE00375021 /* Menu.swift */,
+				2CFA26D01DC573AD00375021 /* MenuModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2CFA26CC1DC5713300375021 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				2CF67B391DC444BC00DE4D7A /* CAPSPageMenu.swift */,
+				2CF67B5A1DC46DB400DE4D7A /* UIColor.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		2CFA26CD1DC5718600375021 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				2CE1D71D1DC42C4100E12527 /* LaunchScreen.storyboard */,
+				2CE1D7181DC42C4100E12527 /* Main.storyboard */,
+			);
+			name = Layout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,7 +347,9 @@
 				2C924B531DC47ED000EBE097 /* FavoriteViewController.swift in Sources */,
 				2C924B511DC47E1A00EBE097 /* FavoriteStoreCollectionViewCell.swift in Sources */,
 				2C924B571DC4A46100EBE097 /* MenuCollectionViewCell.swift in Sources */,
-				2CE1D7171DC42C4100E12527 /* ViewController.swift in Sources */,
+				2CFA26D11DC573AD00375021 /* MenuModel.swift in Sources */,
+				2CFA26CF1DC571CE00375021 /* Menu.swift in Sources */,
+				2CFA26C81DC56DC300375021 /* QRViewController.swift in Sources */,
 				2C924B4F1DC4770900EBE097 /* StoreTableViewCell.swift in Sources */,
 				2CE1D7151DC42C4100E12527 /* AppDelegate.swift in Sources */,
 			);

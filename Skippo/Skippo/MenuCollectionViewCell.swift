@@ -15,7 +15,9 @@ class MenuCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var numOrderLabel: UILabel!
     var countOrder:Int = 0
     @IBAction func minusButton(_ sender: Any) {
-        countOrder -= 1
+        if countOrder > 0 {
+            countOrder -= 1
+        }
         numOrderLabel.text = String(countOrder)
     }
     @IBAction func plusButton(_ sender: Any) {

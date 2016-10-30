@@ -19,10 +19,15 @@ class MenuViewController: UIViewController {
     var pageMenu : CAPSPageMenu?
     override func viewDidLoad() {
         super.viewDidLoad()
+        MenuModel.setMenus()
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let foodVC = storyboard.instantiateViewController(withIdentifier: "menu") as! MenuDetailViewController
         let drinkVC = storyboard.instantiateViewController(withIdentifier: "menu") as! MenuDetailViewController
         let sidemenuVC = storyboard.instantiateViewController(withIdentifier: "menu") as! MenuDetailViewController
+        
+        foodVC.category = 0
+        drinkVC.category = 1
+        sidemenuVC.category = 2
         
         // Array to keep track of controllers in page menu
         var controllerArray : [UIViewController] = []
