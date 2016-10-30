@@ -10,13 +10,14 @@
 
 masterブランチ　→　READMEを記述
 
-movileブランチ　→　注文するアプリ　
-
-iPadAppブランチ →　QR読み取りアプリ
-
-serverブランチ　→　管理画面(Web)
-
 imagesブランチ　→　READMEの画像保存場所
+
+[mobileブランチ](https://github.com/jphacks/KS_1606/tree/mobile)　→　注文するアプリ　
+
+[iPadAppブランチ](https://github.com/jphacks/KS_1606/tree/iPadApp) →　QR読み取りアプリ
+
+[serverブランチ](https://github.com/jphacks/KS_1606/tree/server)　→　管理画面(Web)
+
 
 ### Skippoイメージ
 
