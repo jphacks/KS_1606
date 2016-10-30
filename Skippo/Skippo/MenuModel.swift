@@ -54,6 +54,16 @@ class MenuModel: NSObject {
         return items
     }
     
+    static func getItemById(id:Int) -> Menu{
+        var menu = Menu()
+        for item in MenuModel.sharedInstance.menus{
+            if item.id == id{
+                menu = item
+            }
+        }
+        return menu
+        
+    }
     
     
 }

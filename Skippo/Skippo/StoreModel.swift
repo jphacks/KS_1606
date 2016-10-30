@@ -15,7 +15,7 @@ class StoreModel:NSObject{
     var stores = [Store]()
     
     static func setStore(){
-        sharedInstance.stores.append(Store(id: 0, name: "BURGER KING", imageUrl: "store1"))
+        sharedInstance.stores.append(Store(id: 6, name: "McDonald's", imageUrl: "store6"))
         sharedInstance.stores.append(Store(id: 1, name: "SUBWAY", imageUrl: "store2"))
         sharedInstance.stores.append(Store(id: 2, name: "Domino's Pizza", imageUrl: "store3"))
         sharedInstance.stores.append(Store(id: 3, name: "KFC", imageUrl: "store4"))
