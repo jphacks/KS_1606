@@ -20,7 +20,8 @@ html
         = link_to root_path ,class: "logo" do
           /! mini logo for sidebar mini 50x50 pixels
           span.logo-mini
-            strong Skippo
+            = image_tag asset_path("skippo-logo.png"), size: "80x35"
+
         /! Header Navbar
         nav.navbar.navbar-static-top role="navigation" 
           /! Sidebar toggle button
