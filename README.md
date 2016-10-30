@@ -34,20 +34,19 @@ imagesブランチ　→　READMEの画像保存場所
 ### 注文画面
 
 ###### 1. 店舗選択
-![店舗選択](https://github.com/jphacks/KS_1606/blob/images/images/SELECT.PNG?raw=true)
+<img src="https://github.com/jphacks/KS_1606/blob/images/images/SELECT.PNG?raw=true" width="230">
 
 ###### 2. 食べ物を選択
-![食べ物を選択](https://github.com/jphacks/KS_1606/blob/images/images/FOOD.PNG?raw=true)
+<img src="https://github.com/jphacks/KS_1606/blob/images/images/FOOD.PNG?raw=true" width="230">
 
 ###### 3. 飲み物を選択
-![飲み物を選択](https://github.com/jphacks/KS_1606/blob/images/images/DRINK.PNG?raw=true)
+<img src="https://github.com/jphacks/KS_1606/blob/images/images/DRINK.PNG?raw=true" width="230">
 
 ###### 4. サイドメニューを選択
-![サイドメニューを選択](https://github.com/jphacks/KS_1606/blob/images/images/SIDEMENU.PNG?raw=true)
+<img src="https://github.com/jphacks/KS_1606/blob/images/images/SIDEMENU.PNG?raw=true" width="230">
 
 ###### 5. QR発行
-![QR発行](https://github.com/jphacks/KS_1606/blob/images/images/QR.PNG?raw=true)
-
+<img src="https://github.com/jphacks/KS_1606/blob/images/images/QR.PNG?raw=true" width="230">
 ### X Tech
 
 TimeTech（Techで時間の効率化を図る）
