@@ -11,6 +11,8 @@ import UIKit
 class NearByViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     var handler:()->Void = {}
+    
+    var stores = StoreModel.sharedInstance.stores
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,12 +25,12 @@ class NearByViewController: UIViewController,UITableViewDelegate,UITableViewData
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return stores.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "store", for: indexPath) as! StoreTableViewCell
-        cell.storeImageView.image = UIImage(named: "mac")
+        cell.storeImageView.image = UIImage(named: stores[indexPath.row].imageUrl)
         
         return cell
     }

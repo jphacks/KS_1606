@@ -12,22 +12,23 @@ class MenuViewController: UIViewController {
     
     @IBOutlet weak var mainView: UIView!
     
-    
+    var foodVC:MenuDetailViewController?
+    var drinkVC:MenuDetailViewController?
+    var sidemenuVC:MenuDetailViewController?
     
     
     
     var pageMenu : CAPSPageMenu?
     override func viewDidLoad() {
         super.viewDidLoad()
-        MenuModel.setMenus()
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let foodVC = storyboard.instantiateViewController(withIdentifier: "menu") as! MenuDetailViewController
-        let drinkVC = storyboard.instantiateViewController(withIdentifier: "menu") as! MenuDetailViewController
-        let sidemenuVC = storyboard.instantiateViewController(withIdentifier: "menu") as! MenuDetailViewController
+        foodVC = storyboard.instantiateViewController(withIdentifier: "menu") as? MenuDetailViewController
+        drinkVC = storyboard.instantiateViewController(withIdentifier: "menu") as? MenuDetailViewController
+        sidemenuVC = storyboard.instantiateViewController(withIdentifier: "menu") as? MenuDetailViewController
         
-        foodVC.category = 0
-        drinkVC.category = 1
-        sidemenuVC.category = 2
+        foodVC?.category = 0
+        drinkVC?.category = 1
+        sidemenuVC?.category = 2
         
         // Array to keep track of controllers in page menu
         var controllerArray : [UIViewController] = []
@@ -37,13 +38,13 @@ class MenuViewController: UIViewController {
         // (Can be any UIViewController subclass)
         // Make sure the title property of all view controllers is set
         // Example:
-        foodVC.title = "Food"
-        drinkVC.title = "Drink"
-        sidemenuVC.title = "sidemenu"
+        foodVC?.title = "Food"
+        drinkVC?.title = "Drink"
+        sidemenuVC?.title = "sidemenu"
         
-        controllerArray.append(foodVC)
-        controllerArray.append(drinkVC)
-        controllerArray.append(sidemenuVC)
+        controllerArray.append(foodVC!)
+        controllerArray.append(drinkVC!)
+        controllerArray.append(sidemenuVC!)
         // Do any additional setup after loading the view.
         // Customize page menu to your liking (optional) or use default settings by sending nil for 'options' in the init
         // Example:
@@ -76,7 +77,25 @@ class MenuViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "qrcodeSegue"{
+            let vc = segue.destination as! QRViewController
+            vc.orderList = sender as! [[Int:Int]]
+        }
+    }
+    
 
+    @IBAction func nextButton(_ sender: Any) {
+        var orderList = [[Int:Int]]()
+        guard let foodList = foodVC?.getOrderList() else {return}
+        guard let drinkList = drinkVC?.getOrderList() else {return}
+        guard let sidemenuList = sidemenuVC?.getOrderList() else {return}
+        
+        orderList = [foodList,drinkList,sidemenuList]
+
+        
+        performSegue(withIdentifier: "qrcodeSegue", sender: orderList)
+    }
     
     /*
      // MARK: - Navigation

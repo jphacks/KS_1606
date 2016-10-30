@@ -11,6 +11,8 @@ import UIKit
 class FavoriteViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     
     var handler:() -> Void = {}
+
+    var stores = StoreModel.sharedInstance.stores
     
     @IBOutlet weak var collectionView: UICollectionView!
     private var numbers = [Int]()
@@ -60,12 +62,12 @@ class FavoriteViewController: UIViewController,UICollectionViewDelegate,UICollec
 
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 25
+        return stores.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FavoriteCell", for: indexPath) as! FavoriteStoreCollectionViewCell
-        cell.favoriteStore.image = UIImage(named: "mac")
+        cell.favoriteStore.image = UIImage(named: stores[indexPath.row].imageUrl)
         
         return cell
     }

@@ -116,7 +116,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sgY-Lg-EAR">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="627"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UOT-f8-UI9">
                                     <size key="itemSize" width="180" height="167"/>
@@ -132,7 +132,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="180" height="167"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hamburger" translatesAutoresizingMaskIntoConstraints="NO" id="SuI-9m-Pm6">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hamburger" translatesAutoresizingMaskIntoConstraints="NO" id="SuI-9m-Pm6">
                                                     <rect key="frame" x="0.0" y="0.0" width="180" height="117"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1At-NZ-ZeJ">
@@ -203,11 +203,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="sgY-Lg-EAR" firstAttribute="leading" secondItem="Rtl-wD-DHj" secondAttribute="leading" id="3Kd-Mg-jn7"/>
-                            <constraint firstItem="oC6-iK-TqB" firstAttribute="top" secondItem="sgY-Lg-EAR" secondAttribute="bottom" id="784-us-HmP"/>
+                            <constraint firstItem="oC6-iK-TqB" firstAttribute="top" secondItem="sgY-Lg-EAR" secondAttribute="bottom" constant="20" id="784-us-HmP"/>
                             <constraint firstItem="sgY-Lg-EAR" firstAttribute="top" secondItem="XYP-dC-0Pc" secondAttribute="bottom" id="sQs-Jt-Ma4"/>
                             <constraint firstAttribute="trailing" secondItem="sgY-Lg-EAR" secondAttribute="trailing" id="wkt-qd-YkF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="sgY-Lg-EAR" id="wmE-cz-ED4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iKF-s6-eNL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -242,7 +245,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="121" height="121"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EbY-Hl-3DO">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EbY-Hl-3DO">
                                                     <rect key="frame" x="0.0" y="0.0" width="121" height="121"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="EbY-Hl-3DO" secondAttribute="height" multiplier="1:1" id="RXx-Yb-dni"/>
@@ -312,12 +315,13 @@
                     <navigationItem key="navigationItem" title="Title" id="adW-9Z-Tto">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="Fh7-Ys-9NM">
                             <connections>
-                                <segue destination="AJd-8O-3gp" kind="show" id="cwF-Vn-2Wq"/>
+                                <action selector="nextButton:" destination="4M4-bY-ZGt" id="H92-Yl-12n"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="mainView" destination="L9S-zM-vQQ" id="Zz0-R9-74X"/>
+                        <segue destination="AJd-8O-3gp" kind="show" identifier="qrcodeSegue" id="dxQ-XS-FFU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CMw-uV-qvI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -390,7 +394,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JKR-ln-TDX" id="Bqh-CM-XYY">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -436,6 +440,9 @@
                             <constraint firstItem="xxt-wM-wML" firstAttribute="leading" secondItem="Bch-DT-lCm" secondAttribute="leading" id="pkt-ND-g4P"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="qrImageView" destination="xxt-wM-wML" id="OMM-PR-Xky"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LGM-9e-OYi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

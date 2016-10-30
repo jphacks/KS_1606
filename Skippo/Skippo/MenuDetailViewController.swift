@@ -10,12 +10,30 @@ import UIKit
 
 class MenuDetailViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     
+    @IBOutlet weak var collectionView: UICollectionView!
     var category = -1
-    var items = [Menu]()
+    private var items = [Menu]()
+    
+    func getOrderList()->[Int:Int]{
+        var orderList = [Int:Int]()
+        for (i,menu) in items.enumerated(){
+            let indexPath = IndexPath(row: i, section: 0)
+            let cell = collectionView.cellForItem(at: indexPath) as? MenuCollectionViewCell
+            
+            if  let unwrappedCell = cell{
+                if unwrappedCell.countOrder > 0{
+                    orderList[menu.id] = unwrappedCell.countOrder
+                }
+            }
+        }
+        return orderList
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         items = MenuModel.getIemsForCategory(category: category)
+
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -24,7 +42,7 @@ class MenuDetailViewController: UIViewController,UICollectionViewDelegate,UIColl
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "menu", for: indexPath) as! MenuCollectionViewCell
-        cell.menuImage.image = UIImage(named: "hamburger")
+        cell.menuImage.image = UIImage(named: items[indexPath.row].imageUrl)
         cell.name.text = items[indexPath.row].name
         cell.price.text = items[indexPath.row].price.description
         
@@ -36,6 +54,7 @@ class MenuDetailViewController: UIViewController,UICollectionViewDelegate,UIColl
         return CGSize(width: cellSize, height: cellSize)
     }
     
+
     /*
      // MARK: - Navigation
      
