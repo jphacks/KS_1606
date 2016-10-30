@@ -1,5 +1,36 @@
 # Skippo
+
 ## 製品概要
+
+### はじめに
+
+我々は3つのプロダクトで１つのサービスを作り上げました。QRコードを読み取って注文を確認するアプリとユーザがメニューを注文することができるアプリ、そして店舗が注文状況やメニューを管理する管理画面を作成しました。
+
+### ブランチの説明
+
+masterブランチ　→　READMEを記述
+
+movileブランチ　→　注文するアプリ　
+
+iPadAppブランチ →　QR読み取りアプリ
+
+serverブランチ　→　管理画面(Web)
+
+imagesブランチ　→　READMEの画像保存場所
+
+### Skippoイメージ
+
+### 管理画面
+
+###### ダッシュボード
+![管理画面1](https://github.com/jphacks/KS_1606/blob/images/images/skippo-dashboard.png?raw=true)
+
+###### 店舗情報入力
+![管理画面2](https://github.com/jphacks/KS_1606/blob/images/images/skippo-information.png?raw=true)
+
+###### メニュー管理
+![管理画面3](https://github.com/jphacks/KS_1606/blob/images/images/skippo-menu.png?raw=true)
+
 ### X Tech
 
 TimeTech（Techで時間の効率化を図る）
