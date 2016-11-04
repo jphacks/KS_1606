@@ -66,7 +66,8 @@ class ViewController: UIViewController,QRCodeReaderViewControllerDelegate,AVAudi
         
         if let soundUrl:NSURL = NSURL.fileURL(withPath: Bundle.main.path(forResource: "decision8", ofType:"mp3")!) as NSURL?{
             AudioServicesCreateSystemSoundID(soundUrl, &soundIdRing)
-            AudioServicesPlaySystemSound(soundIdRing)
+            /// TODO: Sound ON
+//            AudioServicesPlaySystemSound(soundIdRing)
         }
         
         

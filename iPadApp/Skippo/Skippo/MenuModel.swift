@@ -54,15 +54,14 @@ class MenuModel: NSObject {
         return items
     }
     
-    static func getMenuById(_ id:Int)->Menu{
-        var menu = Menu()
+    static func getMenuById(_ id:Int)->Menu?{
         for m in MenuModel.sharedInstance.menus{
-            if menu.id == id{
-                menu = m
+            if m.id == id{
+                return m
             }
-            
         }
-        return menu
+        return nil
+        
     }
     
     

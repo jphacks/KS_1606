@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         UINavigationBar.appearance().tintColor = UIColor(aHexStr: "0078A2")
+        MenuModel.setMenus()
         
         return true
     }

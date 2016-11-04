@@ -11,7 +11,11 @@ import UIKit
 class ResultViewController: UIViewController {
     
     var value:String = ""
-    let idAndNums = [String:Int]()
+    var idAndNums = [String:Int]()
+    let resultModel = ResultModel.sharedInstance
+    
+    @IBOutlet weak var totalLabel: UILabel!
+    
 
     @IBOutlet weak var topButton: UIButton!
     override func viewDidLoad() {
@@ -19,14 +23,21 @@ class ResultViewController: UIViewController {
         
         topButton.backgroundColor = UIColor(aHexStr: "A25300")
         
-        print(value)
+    
         
-        
-        if let dataFromString = value.data(using: .utf8, allowLossyConversion: false) {
+        if let dataFromString = value.data(using: .utf8) {
             let json = JSON(data: dataFromString)
-            for j in json.array!{
-                print(j)
+            guard let dict = json.dictionary else { return }
+            let keys = dict.keys
+            for k in keys{
+                idAndNums[k] = dict[k]?.intValue
+
             }
+            ResultModel.setResult(idAndNums: idAndNums)
+            
+            totalLabel.text = "¥" + resultModel.total.description
+            
+            
         }
         
 
@@ -53,15 +64,21 @@ class ResultViewController: UIViewController {
 
 extension ResultViewController: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return resultModel.subtotals.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "menu", for: indexPath) as! ResultTableViewCell
-        cell.menuTitle.text = "Classic Burger"
-        cell.price.text = "¥100"
+        
+        cell.menuTitle.text = resultModel.subtotals[indexPath.row].menu.name
+        cell.price.text = "¥" + resultModel.subtotals[indexPath.row].subtotal.description
+        cell.numbers.text = "x" + resultModel.subtotals[indexPath.row].num.description
+        
         
         return cell
     }
 
 }
+
+
+
