@@ -20,6 +20,8 @@
 		A461279E1DC5B6D5008B662F /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A461279D1DC5B6D5008B662F /* SwiftyJSON.swift */; };
 		A4A410BC1DC43BC4009DEE47 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A410BB1DC43BC4009DEE47 /* ResultViewController.swift */; };
 		A4A410BE1DC43C99009DEE47 /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A410BD1DC43C99009DEE47 /* ResultTableViewCell.swift */; };
+		A4A5A7411DCCC6E000FB4856 /* ResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A5A7401DCCC6E000FB4856 /* ResultModel.swift */; };
+		A4A5A7451DCCCE4100FB4856 /* Total.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A5A7441DCCCE4100FB4856 /* Total.swift */; };
 		A4DD968C1DCC820D00821636 /* QRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DD96821DCC820D00821636 /* QRCodeReader.swift */; };
 		A4DD968D1DCC820D00821636 /* QRCodeReaderResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DD96831DCC820D00821636 /* QRCodeReaderResult.swift */; };
 		A4DD968E1DCC820D00821636 /* QRCodeReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DD96841DCC820D00821636 /* QRCodeReaderView.swift */; };
@@ -68,6 +70,10 @@
 		A461279D1DC5B6D5008B662F /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		A4A410BB1DC43BC4009DEE47 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		A4A410BD1DC43C99009DEE47 /* ResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
+		A4A5A73E1DCCBCBA00FB4856 /* SkippoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkippoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4A5A73F1DCCBCBA00FB4856 /* SkippoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkippoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4A5A7401DCCC6E000FB4856 /* ResultModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultModel.swift; sourceTree = "<group>"; };
+		A4A5A7441DCCCE4100FB4856 /* Total.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Total.swift; sourceTree = "<group>"; };
 		A4DD96821DCC820D00821636 /* QRCodeReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReader.swift; sourceTree = "<group>"; };
 		A4DD96831DCC820D00821636 /* QRCodeReaderResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderResult.swift; sourceTree = "<group>"; };
 		A4DD96841DCC820D00821636 /* QRCodeReaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderView.swift; sourceTree = "<group>"; };
@@ -79,8 +85,6 @@
 		A4DD968A1DCC820D00821636 /* SwitchCameraButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCameraButton.swift; sourceTree = "<group>"; };
 		A4DD968B1DCC820D00821636 /* ToggleTorchButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleTorchButton.swift; sourceTree = "<group>"; };
 		A4DD96961DCC82AE00821636 /* Skippo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skippo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4DD96971DCC832400821636 /* SkippoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SkippoTests.xctest; path = "/Users/Kazuma/Workspace/KS_1606/iPadApp/Skippo/build/Debug-iphoneos/SkippoTests.xctest"; sourceTree = "<absolute>"; };
-		A4DD96981DCC832400821636 /* SkippoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SkippoUITests.xctest; path = "/Users/Kazuma/Workspace/KS_1606/iPadApp/Skippo/build/Debug-iphoneos/SkippoUITests.xctest"; sourceTree = "<absolute>"; };
 		A4FE1ADD1DC46D2D0025AB6D /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		A4FE1ADF1DC472830025AB6D /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,6 +121,8 @@
 				A42B4E021DC4259400189153 /* SkippoTests */,
 				A42B4E0D1DC4259400189153 /* SkippoUITests */,
 				A4DD96961DCC82AE00821636 /* Skippo.app */,
+				A4A5A73E1DCCBCBA00FB4856 /* SkippoTests.xctest */,
+				A4A5A73F1DCCBCBA00FB4856 /* SkippoUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +136,8 @@
 				A4FE1ADF1DC472830025AB6D /* UIView.swift */,
 				A46127991DC5B343008B662F /* Menu.swift */,
 				A461279B1DC5B34C008B662F /* MenuModel.swift */,
+				A4A5A7401DCCC6E000FB4856 /* ResultModel.swift */,
+				A4A5A7441DCCCE4100FB4856 /* Total.swift */,
 				A42B4DF21DC4259400189153 /* Main.storyboard */,
 				A4A410BB1DC43BC4009DEE47 /* ResultViewController.swift */,
 				A4A410BD1DC43C99009DEE47 /* ResultTableViewCell.swift */,
@@ -212,7 +220,7 @@
 			);
 			name = SkippoTests;
 			productName = SkippoTests;
-			productReference = A4DD96971DCC832400821636 /* SkippoTests.xctest */;
+			productReference = A4A5A73E1DCCBCBA00FB4856 /* SkippoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		A42B4E091DC4259400189153 /* SkippoUITests */ = {
@@ -230,7 +238,7 @@
 			);
 			name = SkippoUITests;
 			productName = SkippoUITests;
-			productReference = A4DD96981DCC832400821636 /* SkippoUITests.xctest */;
+			productReference = A4A5A73F1DCCBCBA00FB4856 /* SkippoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -240,7 +248,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = maekawakazuma;
 				TargetAttributes = {
 					A42B4DEA1DC4259300189153 = {
@@ -324,6 +332,8 @@
 				A4DD96951DCC820D00821636 /* ToggleTorchButton.swift in Sources */,
 				A4DD96931DCC820D00821636 /* ReaderOverlayView.swift in Sources */,
 				A4DD968C1DCC820D00821636 /* QRCodeReader.swift in Sources */,
+				A4A5A7411DCCC6E000FB4856 /* ResultModel.swift in Sources */,
+				A4A5A7451DCCCE4100FB4856 /* Total.swift in Sources */,
 				A42B4DEF1DC4259400189153 /* AppDelegate.swift in Sources */,
 				A461279A1DC5B343008B662F /* Menu.swift in Sources */,
 				A4A410BE1DC43C99009DEE47 /* ResultTableViewCell.swift in Sources */,
@@ -512,7 +522,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.planningdev.Skippo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
