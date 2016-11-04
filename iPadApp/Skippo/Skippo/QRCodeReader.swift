@@ -116,12 +116,12 @@ public final class QRCodeReader: NSObject, AVCaptureMetadataOutputObjectsDelegat
 
     super.init()
 
-    configureDefaultComponents(withCaptureDevicePosition: captureDevicePosition)
+    configureDefaultComponents(captureDevicePosition)
   }
 
   // MARK: - Initializing the AV Components
 
-  private func configureDefaultComponents(withCaptureDevicePosition: AVCaptureDevicePosition) {
+  fileprivate func configureDefaultComponents(_ withCaptureDevicePosition: AVCaptureDevicePosition) {
     session.addOutput(metadataOutput)
 
     switch withCaptureDevicePosition {

@@ -12,6 +12,7 @@ class ResultTableViewCell: UITableViewCell {
 
     @IBOutlet weak var menuTitle: UILabel!
     @IBOutlet weak var price: UILabel!
+    @IBOutlet weak var numbers: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

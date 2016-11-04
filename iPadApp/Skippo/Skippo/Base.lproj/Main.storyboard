@@ -88,16 +88,24 @@
                                                             <color key="textColor" red="0.0" green="0.25098039220000001" blue="0.33725490200000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uny-Gv-BBv">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" red="0.0" green="0.25098039220000001" blue="0.33725490200000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstItem="EjC-vE-eAK" firstAttribute="centerY" secondItem="y3y-xl-sGq" secondAttribute="centerY" id="1v5-cq-pAg"/>
                                                         <constraint firstItem="EjC-vE-eAK" firstAttribute="leading" secondItem="y3y-xl-sGq" secondAttribute="leadingMargin" constant="40" id="2CD-Dd-YGz"/>
+                                                        <constraint firstItem="pOo-kI-TM3" firstAttribute="leading" secondItem="Uny-Gv-BBv" secondAttribute="trailing" constant="16" id="IB5-Li-3h3"/>
+                                                        <constraint firstItem="Uny-Gv-BBv" firstAttribute="centerY" secondItem="y3y-xl-sGq" secondAttribute="centerY" id="PSv-NN-0Pe"/>
                                                         <constraint firstAttribute="trailingMargin" secondItem="pOo-kI-TM3" secondAttribute="trailing" constant="40" id="Tr3-rt-pkc"/>
                                                         <constraint firstItem="pOo-kI-TM3" firstAttribute="centerY" secondItem="y3y-xl-sGq" secondAttribute="centerY" id="XDP-w7-H9P"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
                                                     <outlet property="menuTitle" destination="EjC-vE-eAK" id="3Yn-fm-ewY"/>
+                                                    <outlet property="numbers" destination="Uny-Gv-BBv" id="Enh-dn-zsM"/>
                                                     <outlet property="price" destination="pOo-kI-TM3" id="sa6-tq-cEd"/>
                                                 </connections>
                                             </tableViewCell>

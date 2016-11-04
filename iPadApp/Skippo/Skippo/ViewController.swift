@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import QRCodeReader
+//import QRCodeReader
 import AVFoundation
 import AudioToolbox
 
@@ -68,10 +68,19 @@ class ViewController: UIViewController,QRCodeReaderViewControllerDelegate,AVAudi
             AudioServicesCreateSystemSoundID(soundUrl, &soundIdRing)
             AudioServicesPlaySystemSound(soundIdRing)
         }
-        self.performSegue(withIdentifier: "showResult", sender: nil)
+        
+        
+        self.performSegue(withIdentifier: "showResult", sender: result.value)
         dismiss(animated: true, completion: nil)
     }
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showResult" {
+            let vc = segue.destination as! ResultViewController
+            vc.value = sender as! String
+        }
+    }
     
     
 }

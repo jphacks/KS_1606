@@ -9,12 +9,26 @@
 import UIKit
 
 class ResultViewController: UIViewController {
+    
+    var value:String = ""
+    let idAndNums = [String:Int]()
 
     @IBOutlet weak var topButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         topButton.backgroundColor = UIColor(aHexStr: "A25300")
+        
+        print(value)
+        
+        
+        if let dataFromString = value.data(using: .utf8, allowLossyConversion: false) {
+            let json = JSON(data: dataFromString)
+            for j in json.array!{
+                print(j)
+            }
+        }
+        
 
         // Do any additional setup after loading the view.
     }

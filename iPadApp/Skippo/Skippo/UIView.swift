@@ -42,7 +42,7 @@ extension UIView {
      - parameter roundingCorners: ([UIRectCorner])  角丸にしたい部分を配列で指定する
      - parameter radius: (CGFloat)   角丸の半径を指定
      */
-    public func cornerRadius(roundingCorners: UIRectCorner, radius: CGFloat) {
+    public func cornerRadius(_ roundingCorners: UIRectCorner, radius: CGFloat) {
         let maskPath = UIBezierPath(
             roundedRect: bounds,
             byRoundingCorners: roundingCorners,
