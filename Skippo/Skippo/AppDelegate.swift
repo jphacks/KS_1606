@@ -15,7 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
+        //ナビゲーションバーの背景を変更
+        UINavigationBar.appearance().barTintColor = UIColor(aHexStr: "EEEEEE")
+        UINavigationBar.appearance().tintColor = UIColor(aHexStr: "0078A2")
+
         MenuModel.setMenus()
         StoreModel.setStore()
         // Override point for customization after application launch.

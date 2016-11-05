@@ -12,12 +12,14 @@ class NearByViewController: UIViewController,UITableViewDelegate,UITableViewData
     
     var handler:()->Void = {}
     
+    @IBOutlet weak var tableView: UITableView!
     var stores = StoreModel.sharedInstance.stores
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -36,6 +38,7 @@ class NearByViewController: UIViewController,UITableViewDelegate,UITableViewData
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         handler()
     }
     

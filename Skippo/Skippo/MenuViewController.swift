@@ -92,7 +92,6 @@ class MenuViewController: UIViewController {
         guard let sidemenuList = sidemenuVC?.getOrderList() else {return}
         
         orderList = [foodList,drinkList,sidemenuList]
-
         
         performSegue(withIdentifier: "qrcodeSegue", sender: orderList)
     }

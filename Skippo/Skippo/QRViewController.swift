@@ -20,6 +20,7 @@ class QRViewController: UIViewController,UITableViewDelegate,UITableViewDataSour
     var orderList = [[Int:Int]]()
     var list = [String:Int]()
     var ids = [Int]()
+    var qrUiImage = UIImage()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +50,11 @@ class QRViewController: UIViewController,UITableViewDelegate,UITableViewDataSour
         let sizeTransform = CGAffineTransform(scaleX: 10, y: 10)
         let qrImage = qr.outputImage?.applying(sizeTransform)
         
-        self.qrImageView.image = UIImage(ciImage: qrImage!)
+        let context = CIContext()
+        let cgImage = context.createCGImage(qrImage!, from: (qrImage?.extent)!)
+        qrUiImage = UIImage(cgImage: cgImage!)
+        
+        self.qrImageView.image = qrUiImage
         
         totalPriceLabel.text = "¥" + calcTotal().description
 
@@ -60,6 +65,29 @@ class QRViewController: UIViewController,UITableViewDelegate,UITableViewDataSour
         return list.count
     }
     
+    @IBAction func topButton(_ sender: Any) {
+        self.navigationController?.popToRootViewController(animated: true)
+    }
+    @IBAction func lineButton(_ sender: Any) {
+        let pasteBoard = UIPasteboard.general
+        
+        
+        guard let data = UIImagePNGRepresentation(qrUiImage) else { return }
+        pasteBoard.setData( data, forPasteboardType: "public.png")
+        
+        let urlString = "line://msg/image/" + pasteBoard.name.rawValue
+        guard let url = URL(string: urlString) else { return }
+        if UIApplication.shared.canOpenURL(url){
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }else{
+        
+        }
+//        if UIApplication.shared.canOpenURL( {
+//            UIApplication.shared.openURL(NSURL(string: urlString as String)! as URL)
+//        } else {
+//            // - LINEがインストールされていない場合の処理
+//        }
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "orderList", for: indexPath) as! OrderListTableViewCell
         
