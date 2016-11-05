@@ -48,6 +48,17 @@ imagesブランチ　→　READMEの画像保存場所
 
 ###### 5. QR発行
 <img src="https://github.com/jphacks/KS_1606/blob/images/images/QR.PNG?raw=true" width="230">
+
+###### 6. LINE共有
+<img src="https://github.com/jphacks/KS_1606/blob/images/images/LINE.PNG?raw=true" width="230">
+
+### QR受け取りアプリ
+###### 1. QR読み取り画面
+<img src="https://github.com/jphacks/KS_1606/blob/images/images/iPad-qr.PNG?raw=true" width="320">
+
+###### 2. 読み取り結果
+<img src="https://github.com/jphacks/KS_1606/blob/images/images/iPadmenu.PNG?raw=true" width="320">
+
 ### X Tech
 
 TimeTech（Techで時間の効率化を図る）
